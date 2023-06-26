@@ -3,6 +3,8 @@ import { Layout } from "../layout/Layout"
 import { HomePage } from "../pages/HomePage"
 import { ProductPage } from "../pages/ProductPage"
 import { ShopingCartPage } from "../pages/ShopingCartPage"
+import { ProfilePage } from "../pages/ProfilePage"
+import { AboutUs } from "../pages/AboutUs"
 
 
 export const RouterPaths = () => {
@@ -14,11 +16,12 @@ export const RouterPaths = () => {
                     <Route path="products" element={<HomePage />} >
                         <Route path=":productId" element={<ProductPage />} />
                     </Route>
-                    <Route path="profile" element={<div> PROFILE PAGE </div>} >
+                    <Route path="profile" element={<ProfilePage />} >
                         <Route path="login" element={<ProductPage />} />
                         <Route path="register" element={<ProductPage />} />
                         <Route path="wishlist" element={<ProductPage />} />
                     </Route>
+                    <Route path="aboutus" element={<AboutUs />} />
                     <Route path="shopingcart" element={<ShopingCartPage />} />
                 </Route>
             </Routes>
