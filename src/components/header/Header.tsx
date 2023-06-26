@@ -1,8 +1,8 @@
-
+import { Link } from "react-router-dom"
 
 export const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <figure>
                 <img src="" alt="" />
             </figure>
@@ -14,6 +14,13 @@ export const Header = () => {
             <figure>
                 <img src="" alt="" />
             </figure>
-        </div>
+
+
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/products">Products</Link>
+                <Link to="/profile">Profile</Link>
+            </nav>
+        </header>
     )
 }

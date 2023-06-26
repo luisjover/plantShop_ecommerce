@@ -22,7 +22,8 @@ export const Filter: FC = () => {
             {filters.map((filter) => (
                 <FilterButton
                     name={filter.name}
-                    id={useId()}
+                    key={useId()}
+
                 />
             ))}
         </div>

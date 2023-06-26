@@ -1,5 +1,5 @@
 
 export type FilterCategories = {
-    id?: string
+    key?: string
     name: string
 }

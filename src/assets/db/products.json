@@ -1,144 +1,144 @@
 {
-    "products": [
-        {
-          id: 1,
-          name: "Zamioculca",
-          price: 10,
-          stock: 10,
-          image: "/src/assets/images/zamioculca.webp"
-        },
-        {
-          id: 2,
-          name: "Maranta Leuconera",
-          price: 20,
-          stock: 10,
-          image: "/src/assets/images/marantaleuconera.webp"
-        },
-        {
-          id: 3,
-          name: "Monstera Deliciosa",
-          price: 16,
-          stock: 10,
-          image: "/src/assets/images/monsteradeliciosa.webp"
-        },
-        {
-          id: 4,
-          name: "Philodendron Neon",
-          price: 14,
-          stock: 10,
-          image: "/src/assets/images/philodendronneon.webp"
-        },
-        {
-          id: 5,
-          name: "Monstera Variegata Thai Constellation",
-          price: 122,
-          stock: 10,
-          image: "/src/assets/images/thaiconstellation.webp"
-        },
-        {
-          id: 6,
-          name: "Anthurium Pink Flamingo",
-          price: 18,
-          stock: 10,
-          image: "/src/assets/images/anthuriumflamingo.webp"
-        },
-        {
-          id: 7,
-          name: "Philodendron Birkin",
-          price: 36,
-          stock: 10,
-          image: "/src/assets/images/philodendronbirkin.webp"
-        },
-        {
-          id: 8,
-          name: "Begonia Maculata",
-          price: 32,
-          stock: 10,
-          image: "/src/assets/images/begoniamaculata.webp"
-        },
-        {
-          id: 9,
-          name: "Aloe Godzilla",
-          price: 12,
-          stock: 10,
-          image: "/src/assets/images/aloegodzilla.webp"
-        },
-        {
-          id: 10,
-          name: "Syngonium Red Heart",
-          price: 10,
-          stock: 10,
-          image: "/src/assets/images/syngoniumredheart.webp"
-        },
-        {
-          id: 11,
-          name: "Syngonium Confetti",
-          price: 24,
-          stock: 10,
-          image: "/src/assets/images/syngoniumconfetti.webp"
-        },
-        {
-          id: 12,
-          name: "Peperomia Hope",
-          price: 28,
-          stock: 10,
-          image: "/src/assets/images/peperomiahope.webp"
-        },
-        {
-          id: 13,
-          name: "Euphorbia Ingens Variegata",
-          price: 10,
-          stock: 10,
-          image: "/src/assets/images/euphorbiaingensvariegata.webp"
-        },
-        {
-          id: 14,
-          name: "Potus Limón",
-          price: 15,
-          stock: 10,
-          image: "/src/assets/images/potuslimon.webp"
-        },
-        {
-          id: 15,
-          name: "Ficus Lyrata",
-          price: 31,
-          stock: 10,
-          image: "/src/assets/images/ficuslyrata.webp"
-        },
-        {
-          id: 16,
-          name: "Pilea Planta del Dinero",
-          price: 28,
-          stock: 10,
-          image: "/src/assets/images/pilea.webp"
-        },
-        {
-          id: 17,
-          name: "Ficus Ruby",
-          price: 27,
-          stock: 10,
-          image: "/src/assets/images/ficusruby.webp"
-        },
-        {
-          id: 18,
-          name: "Calathea Makoyana",
-          price: 19,
-          stock: 10,
-          image: "/src/assets/images/calatheamakoyana.webp"
-        },
-        {
-          id: 19,
-          name: "Anthurium Clarinervium",
-          price: 21,
-          stock: 10,
-          image: "/src/assets/images/clarinervium.webp"
-        },
-        {
-          id: 20,
-          name: "Calathea Triostar",
-          price: 14,
-          stock: 10,
-          image: "/src/assets/images/calatheatriostar.webp"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Zamioculca",
+      "price": 10,
+      "stock": 10,
+      "image": "/src/assets/images/zamioculca.webp"
+    },
+    {
+      "id": 2,
+      "name": "Maranta Leuconera",
+      "price": 20,
+      "stock": 10,
+      "image": "/src/assets/images/marantaleuconera.webp"
+    },
+    {
+      "id": 3,
+      "name": "Monstera Deliciosa",
+      "price": 16,
+      "stock": 10,
+      "image": "/src/assets/images/monsteradeliciosa.webp"
+    },
+    {
+      "id": 4,
+      "name": "Philodendron Neon",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/philodendronneon.webp"
+    },
+    {
+      "id": 5,
+      "name": "Monstera Variegata Thai Constellation",
+      "price": 122,
+      "stock": 10,
+      "image": "/src/assets/images/thaiconstellation.webp"
+    },
+    {
+      "id": 6,
+      "name": "Anthurium Pink Flamingo",
+      "price": 18,
+      "stock": 10,
+      "image": "/src/assets/images/anthuriumflamingo.webp"
+    },
+    {
+      "id": 7,
+      "name": "Philodendron Birkin",
+      "price": 36,
+      "stock": 10,
+      "image": "/src/assets/images/philodendronbirkin.webp"
+    },
+    {
+      "id": 8,
+      "name": "Begonia Maculata",
+      "price": 32,
+      "stock": 10,
+      "image": "/src/assets/images/begoniamaculata.webp"
+    },
+    {
+      "id": 9,
+      "name": "Aloe Godzilla",
+      "price": 12,
+      "stock": 10,
+      "image": "/src/assets/images/aloegodzilla.webp"
+    },
+    {
+      "id": 10,
+      "name": "Syngonium Red Heart",
+      "price": 10,
+      "stock": 10,
+      "image": "/src/assets/images/syngoniumredheart.webp"
+    },
+    {
+      "id": 11,
+      "name": "Syngonium Confetti",
+      "price": 24,
+      "stock": 10,
+      "image": "/src/assets/images/syngoniumconfetti.webp"
+    },
+    {
+      "id": 12,
+      "name": "Peperomia Hope",
+      "price": 28,
+      "stock": 10,
+      "image": "/src/assets/images/peperomiahope.webp"
+    },
+    {
+      "id": 13,
+      "name": "Euphorbia Ingens Variegata",
+      "price": 10,
+      "stock": 10,
+      "image": "/src/assets/images/euphorbiaingensvariegata.webp"
+    },
+    {
+      "id": 14,
+      "name": "Potus Limón",
+      "price": 15,
+      "stock": 10,
+      "image": "/src/assets/images/potuslimon.webp"
+    },
+    {
+      "id": 15,
+      "name": "Ficus Lyrata",
+      "price": 31,
+      "stock": 10,
+      "image": "/src/assets/images/ficuslyrata.webp"
+    },
+    {
+      "id": 16,
+      "name": "Pilea Planta del Dinero",
+      "price": 28,
+      "stock": 10,
+      "image": "/src/assets/images/pilea.webp"
+    },
+    {
+      "id": 17,
+      "name": "Ficus Ruby",
+      "price": 27,
+      "stock": 10,
+      "image": "/src/assets/images/ficusruby.webp"
+    },
+    {
+      "id": 18,
+      "name": "Calathea Makoyana",
+      "price": 19,
+      "stock": 10,
+      "image": "/src/assets/images/calatheamakoyana.webp"
+    },
+    {
+      "id": 19,
+      "name": "Anthurium Clarinervium",
+      "price": 21,
+      "stock": 10,
+      "image": "/src/assets/images/clarinervium.webp"
+    },
+    {
+      "id": 20,
+      "name": "Calathea Triostar",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/calatheatriostar.webp"
+    }
+  ]
 }
