@@ -2,7 +2,6 @@
 export type FilterCategories = {
     name: string
     id: string
-    setCurrentFilter?: any
     filter: Filters
 }
 

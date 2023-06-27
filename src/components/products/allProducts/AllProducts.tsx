@@ -9,29 +9,24 @@ import "./allProducts.css"
 export const AllProducts = () => {
     const [products, setProducts] = useState<Product[] | null>(null)
 
-    const filter = useFilterContext()
+    const filterContext = useFilterContext()
 
 
     useEffect(() => {
 
-        async function getfetch() {
+        const getFetch = async () => {
             const newProducts = await getProducts();
             setProducts(newProducts)
         }
-        getfetch()
+        getFetch()
     }, [])
 
-    const filteredProducts = products?.filter((product) => product.filters.includes(filter.currentFilter))
-
-
-
-    if (filteredProducts === undefined) return
-
+    const filteredProducts = products?.filter((product) => product.filters.includes(filterContext.currentFilter))
 
 
     return (
         <div className="product-card-container">
-            {filteredProducts.map(({ ...props }) => (
+            {filteredProducts?.map(({ ...props }) => (
                 <ProductCard {...props} key={props.id} />
             ))}
         </div>

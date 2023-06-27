@@ -8,14 +8,13 @@ import { AboutUs } from "../pages/AboutUs"
 
 
 export const RouterPaths = () => {
+
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />
-                    <Route path="products" element={<HomePage />} >
-                        <Route path=":productId" element={<ProductPage />} />
-                    </Route>
+                    <Route path="products/:productid" element={<ProductPage />} />
                     <Route path="profile" element={<ProfilePage />} >
                         <Route path="login" element={<ProductPage />} />
                         <Route path="register" element={<ProductPage />} />

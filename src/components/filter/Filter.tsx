@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react'
+import { FC } from 'react'
 import { FilterCategories, Filters } from "../../types/types"
 import { FilterButton } from '.'
 import "./filter.css"
@@ -13,7 +13,7 @@ export const Filter: FC = () => {
 
 
 
-    const filters: FilterCategories[] = [
+    const filterCategories: FilterCategories[] = [
         {
             name: "TOP SALES",
             id: "1",
@@ -33,13 +33,13 @@ export const Filter: FC = () => {
 
     return (
         <nav className='filter-container'>
-            {filters.map((filter) => (
+            {filterCategories.map((category) => (
                 <FilterButton
-                    name={filter.name}
-                    id={filter.id}
-                    key={filter.id}
+                    name={category.name}
+                    id={category.id}
+                    key={category.id}
                     // setCurrentFilter={setCurrentFilter}
-                    filter={filter.filter}
+                    filter={category.filter}
 
                 />
             ))}
