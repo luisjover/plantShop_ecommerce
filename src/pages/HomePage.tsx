@@ -1,12 +1,14 @@
-import { Filter } from "../components/filter/Filter"
-import { AllProducts } from "../components/products/AllProducts"
+import { Filter, AllProducts } from "../components"
+import { FilterProvider } from "../contexts/productsFilterContext"
 
 export const HomePage = () => {
     return (
         <>
 
-            <Filter />
-            <AllProducts />
+            <FilterProvider>
+                <Filter />
+                <AllProducts />
+            </FilterProvider>
 
         </>
     )

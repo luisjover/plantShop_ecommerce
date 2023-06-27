@@ -2,6 +2,8 @@
 export type FilterCategories = {
     name: string
     id: string
+    setCurrentFilter?: any
+    filter: Filters
 }
 
 
@@ -12,11 +14,11 @@ export type Product = {
     price: number,
     stock: number,
     image: string,
-    filters: string[]
+    filters: Filters[]
 }
 
-enum Filter {
-    "easycare",
-    "topsales",
-    "petfriendly"
+export enum Filters {
+    topsales = "topsales",
+    easycare = "easycare",
+    petfriendly = "petfriendly"
 }
