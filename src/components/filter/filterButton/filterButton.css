@@ -1,0 +1,19 @@
+.filter-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.filter-input:focus+label {
+    box-shadow: 0 0 0 4px green
+}
+
+.filter-input:checked+label {
+    border: solid 3px greenyellow;
+}
+
+.filter-label {
+    width: 40px;
+    margin-right: 20px;
+    border: 2px solid purple;
+}

@@ -1,4 +1,4 @@
-import { FC, useId } from 'react'
+import { FC } from 'react'
 import { FilterCategories } from "../../types/types"
 import { FilterButton } from "./filterButton/FilterButton"
 
@@ -7,13 +7,16 @@ export const Filter: FC = () => {
 
     const filters: FilterCategories[] = [
         {
-            name: "TOP SELLER"
+            name: "TOP SELLER",
+            id: "1"
         },
         {
-            name: "PET FRIENDLY"
+            name: "PET FRIENDLY",
+            id: "2"
         },
         {
-            name: "EASY CARE"
+            name: "EASY CARE",
+            id: "3"
         },
     ]
 
@@ -22,7 +25,8 @@ export const Filter: FC = () => {
             {filters.map((filter) => (
                 <FilterButton
                     name={filter.name}
-                    key={useId()}
+                    id={filter.id}
+                    key={filter.id}
 
                 />
             ))}

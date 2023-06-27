@@ -1,0 +1,319 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Zamioculca",
+      "price": 10,
+      "stock": 10,
+      "image": "/src/assets/images/products/zamioculca.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Maranta Leuconera",
+      "price": 20,
+      "stock": 10,
+      "image": "/src/assets/images/products/marantaleuconera.webp",
+      "filters": [
+        "topsales",
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Monstera Deliciosa",
+      "price": 16,
+      "stock": 10,
+      "image": "/src/assets/images/products/monsteradeliciosa.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Philodendron Neon",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/philodendronneon.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Monstera Variegata Thai Constellation",
+      "price": 122,
+      "stock": 10,
+      "image": "/src/assets/images/products/thaiconstellation.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Anthurium Pink Flamingo",
+      "price": 18,
+      "stock": 10,
+      "image": "/src/assets/images/products/anthuriumflamingo.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Philodendron Birkin",
+      "price": 36,
+      "stock": 10,
+      "image": "/src/assets/images/products/philodendronbirkin.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Begonia Maculata",
+      "price": 32,
+      "stock": 10,
+      "image": "/src/assets/images/products/begoniamaculata.webp",
+      "filters": [
+        "topsales"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Aloe Godzilla",
+      "price": 12,
+      "stock": 10,
+      "image": "/src/assets/images/products/aloegodzilla.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Syngonium Red Heart",
+      "price": 10,
+      "stock": 10,
+      "image": "/src/assets/images/products/syngoniumredheart.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Syngonium Confetti",
+      "price": 24,
+      "stock": 10,
+      "image": "/src/assets/images/products/syngoniumconfetti.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Peperomia Hope",
+      "price": 28,
+      "stock": 10,
+      "image": "/src/assets/images/products/peperomiahope.webp",
+      "filters": [
+        "topsales",
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Euphorbia Ingens Variegata",
+      "price": 10,
+      "stock": 10,
+      "image": "/src/assets/images/products/euphorbiaingensvariegata.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Potus Limón",
+      "price": 15,
+      "stock": 10,
+      "image": "/src/assets/images/products/potuslimon.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Ficus Lyrata",
+      "price": 31,
+      "stock": 10,
+      "image": "/src/assets/images/products/ficuslyrata.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Pilea Planta del Dinero",
+      "price": 28,
+      "stock": 10,
+      "image": "/src/assets/images/products/pilea.webp",
+      "filters": [
+        "topsales",
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Ficus Ruby",
+      "price": 27,
+      "stock": 10,
+      "image": "/src/assets/images/products/ficusruby.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Calathea Makoyana",
+      "price": 19,
+      "stock": 10,
+      "image": "/src/assets/images/products/calatheamakoyana.webp",
+      "filters": [
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Anthurium Clarinervium",
+      "price": 21,
+      "stock": 10,
+      "image": "/src/assets/images/products/clarinervium.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Calathea Triostar",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/calatheatriostar.webp",
+      "filters": [
+        "topsales",
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Hoya Carnosa Tricolor",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/hoyacarnosatricolor.webp",
+      "filters": [
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Calathea Orbifolia",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/calatheaorbifolia.webp",
+      "filters": [
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Scindapsus Pictus",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/scindapsuspictus.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Pachira Aquatica - Arbol del Dinero",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/pachiraaquatica.webp",
+      "filters": [
+        "topsales",
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Peperomia Angulata",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/peperomiaangulata.webp",
+      "filters": [
+        "topsales",
+        "petfriendly",
+        "easycare"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Philodendron Micans",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/philodendronmicans.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Pino Norfolk",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/pinonorfolk.webp",
+      "filters": [
+        "topsales",
+        "easycare"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Monstera Adansonii",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/monsteraadansonii.webp",
+      "filters": [
+        "easycare"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Strelitzia Nicolai",
+      "price": 14,
+      "stock": 10,
+      "image": "/src/assets/images/products/strelitzianicolai.webp",
+      "filters": [
+        "easycare"
+      ]
+    }
+  ]
+}
