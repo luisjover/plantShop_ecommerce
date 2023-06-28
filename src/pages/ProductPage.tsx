@@ -1,16 +1,16 @@
 import { useParams } from "react-router-dom"
 import { ProductDetail } from "../components"
+import { ProductsProvider } from "../contexts/allProductsContext"
 
 
 export const ProductPage = () => {
 
-    const productId = useParams()
 
-    if (productId.productid === undefined) return
 
     return (
-        <ProductDetail
-            productId={productId.productid}
-        />
+
+
+        <ProductDetail />
+
     )
 }

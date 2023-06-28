@@ -5,6 +5,7 @@ import { ProductPage } from "../pages/ProductPage"
 import { ShopingCartPage } from "../pages/ShopingCartPage"
 import { ProfilePage } from "../pages/ProfilePage"
 import { AboutUs } from "../pages/AboutUs"
+import { ProductsProvider } from "../contexts/allProductsContext"
 
 
 export const RouterPaths = () => {
@@ -14,7 +15,7 @@ export const RouterPaths = () => {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />
-                    <Route path="products/:productid" element={<ProductPage />} />
+                    <Route path="products/:productId" element={<ProductPage />} />
                     <Route path="profile" element={<ProfilePage />} >
                         <Route path="login" element={<ProductPage />} />
                         <Route path="register" element={<ProductPage />} />

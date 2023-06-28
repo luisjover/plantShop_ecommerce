@@ -3,25 +3,31 @@ import { Product } from "../../../types/types"
 import { useEffect, useState } from "react"
 import { ProductCard } from ".."
 import { useFilterContext } from "../../../utils/hooks/FilterProvider"
+import { useProductContext } from "../../../utils/hooks/ProductsProvider"
 import "./allProducts.css"
 
 
 export const AllProducts = () => {
-    const [products, setProducts] = useState<Product[] | null>(null)
+    // const [products, setProducts] = useState<Product[] | null>(null)
 
-    const filterContext = useFilterContext()
+    const { currentFilter } = useFilterContext()
+    const { products, updateProducts } = useProductContext()
 
 
-    useEffect(() => {
+
+    if (products === null) {
 
         const getFetch = async () => {
             const newProducts = await getProducts();
-            setProducts(newProducts)
+            updateProducts(newProducts)
         }
         getFetch()
-    }, [])
+    }
 
-    const filteredProducts = products?.filter((product) => product.filters.includes(filterContext.currentFilter))
+
+
+    if (products === null) return
+    const filteredProducts: Product[] = products?.filter((product: Product) => product.filters.includes(currentFilter))
 
 
     return (
