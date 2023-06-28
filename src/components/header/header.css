@@ -2,29 +2,3 @@
     height: 10vh;
     background-color: lightcoral;
 }
-
-.header-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-}
-
-.menu-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.main-logo {
-    width: 40vw;
-}
-
-.cart-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.navbar {
-    display: none;
-}

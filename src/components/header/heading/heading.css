@@ -1,0 +1,26 @@
+.header-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.menu-btn,
+.cart-btn {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.menu-icon,
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.main-logo {
+    width: 40vw;
+}

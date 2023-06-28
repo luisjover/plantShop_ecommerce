@@ -1,46 +1,46 @@
 import { useProductContext } from "../../../utils/hooks/ProductsProvider"
 import { useParams } from "react-router-dom"
 import { getProducts } from "../../../api/functions/apiFetch"
+import "./productDetail.css"
 
-export const ProductDetail = ({ ...props }) => {
+const handlePurchase = (productId: number) => {
+
+}
+
+export const ProductDetail = () => {
 
     const { products, updateProducts } = useProductContext()
+
     if (products === null) {
+
         const getFetch = async () => {
             const newProducts = await getProducts();
             updateProducts(newProducts)
         }
+
         getFetch()
     }
 
     const params = useParams();
 
-
     const selectedProductId = params.productId
-
-
-
-
-
-
 
     if (selectedProductId === undefined) return
 
-
     if (products === null) return;
+
     const selectedProduct = products.find((product) => product.id === parseInt(selectedProductId))
 
-    console.log("producto seleccionado del array grande", selectedProduct)
-
+    if (selectedProduct === undefined) return
 
     return (
-        <section>
-            <h4>{selectedProduct?.name}</h4>
-            <figure>
-                <img src={selectedProduct?.image} alt="" />
+        <section className="product-detail-container">
+            <h2>{selectedProduct?.name}</h2>
+            <figure className="img-container">
+                <img src={selectedProduct.image} alt={`Image of a ${selectedProduct.name} plant`} />
             </figure>
-            <p>precio</p>
-            <button>Add to Cart</button>
+            <p>{`${selectedProduct?.price} €`}</p>
+            <button onClick={() => handlePurchase(selectedProduct.id)}>Add to Cart</button>
         </section>
     )
 }
