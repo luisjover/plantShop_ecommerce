@@ -1,3 +1,24 @@
+.burger-menu {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 90%;
+    background-color: lightgreen;
+}
+
+.burger-menu-navbar {
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.burger-menu-close-btn {
+    height: fit-content;
+
+}
+
 .hidden {
     display: none;
 }

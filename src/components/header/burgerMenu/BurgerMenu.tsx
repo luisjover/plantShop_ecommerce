@@ -6,18 +6,25 @@ import "./burgerMenu.css"
 export const BurgerMenu = (props: { menuState: boolean }) => {
 
     useEffect(() => {
-        const navbar = document.querySelector("#navbar");
-        navbar?.classList.toggle("hidden")
+        const burgerMenu = document.querySelector("#burger-menu");
+        burgerMenu?.classList.toggle("hidden")
 
 
     }, [props.menuState])
 
     console.log(props.menuState)
     return (
-        <nav id="navbar" className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/profile">Profile</Link>
-            <Link to="/aboutus">About Us</Link>
-        </nav>
+        <div id="burger-menu" className="burger-menu">
+            <nav className="burger-menu-navbar">
+                <Link to="/">Home</Link>
+                <Link to="/profile">Profile</Link>
+                <Link to="/aboutus">About Us</Link>
+            </nav>
+
+            <button className="burger-menu-close-btn">
+                X
+            </button>
+
+        </div>
     )
 }

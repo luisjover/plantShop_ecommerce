@@ -2,10 +2,7 @@ import { useState, createContext } from "react"
 import { Product } from "../types/types"
 
 
-
-
 export const productsContext = createContext<{ products: Product[] | null; updateProducts: (products: Product[]) => void; }>({ products: null, updateProducts: () => { } })
-
 
 
 export function ProductsProvider({ ...props }) {
