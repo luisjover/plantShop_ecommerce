@@ -4,11 +4,11 @@ import { Product } from "../types/types"
 
 
 
-export const productsContext = createContext<{ products: Product[] | null; updateProducts: (products: Product[]) => void; }>({ products: [], updateProducts: (products: Product[]): void => { } })
+export const productsContext = createContext<{ products: Product[] | null; updateProducts: (products: Product[]) => void; }>({ products: null, updateProducts: () => { } })
 
 
 
-export function ProductsProvider(props: any) {
+export function ProductsProvider({ ...props }) {
     const [products, setProducts] = useState<Product[] | null>(null)
 
     const updateProducts = (products: Product[]) => {

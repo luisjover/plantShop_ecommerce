@@ -4,7 +4,7 @@ import { Filters } from "../types/types"
 
 
 
-export const currentFilterContext = createContext({ currentFilter: Filters.topsales, changeFilter: (filterParam: Filters): void => { (filterParam) } })
+export const currentFilterContext = createContext<{ currentFilter: Filters, changeFilter: (filterParam: Filters) => void }>({ currentFilter: Filters.topsales, changeFilter: () => { } })
 
 
 
