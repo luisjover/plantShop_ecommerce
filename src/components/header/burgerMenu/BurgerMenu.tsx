@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import "./burgerMenu.css"
 
 
-export const BurgerMenu = (props: { menuState: boolean }) => {
+export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => void }) => {
 
     useEffect(() => {
         const burgerMenu = document.querySelector("#burger-menu");
@@ -16,14 +16,23 @@ export const BurgerMenu = (props: { menuState: boolean }) => {
     return (
         <div id="burger-menu" className="burger-menu">
             <nav className="burger-menu-navbar">
-                <Link to="/">Home</Link>
-                <Link to="/profile">Profile</Link>
-                <Link to="/aboutus">About Us</Link>
+                <Link to="/"
+                    onClick={() => props.toggleBurgerMenu()}
+                >Home</Link>
+                <Link to="/profile"
+                    onClick={() => props.toggleBurgerMenu()}
+                >Profile</Link>
+                <Link to="/aboutus"
+                    onClick={() => props.toggleBurgerMenu()}
+                >About Us</Link>
             </nav>
-
-            <button className="burger-menu-close-btn">
+            <button className="burger-menu-close-btn"
+                onClick={() => props.toggleBurgerMenu()}
+            >
                 X
             </button>
+
+
 
         </div>
     )

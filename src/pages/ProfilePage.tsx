@@ -1,13 +1,15 @@
+import { Link, Outlet } from "react-router-dom"
 
 
 export const ProfilePage = () => {
     return (
         <>
             <div>ProfilePage</div>
-            <button>REGISTER</button>
-            <button>LOGIN</button>
-            <button>WHISHLIST</button>
-            <button>SHOPING CART</button>
+            <Link to="access">ACCESS</Link>
+            <Link to="wishlist">WHISHLIST</Link>
+            <Link to="/shopingcart">SHOPING CART</Link>
+
+            <Outlet />
 
         </>
     )

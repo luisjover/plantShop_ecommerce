@@ -9,7 +9,7 @@ export const Layout = () => {
         <>
             <Header />
             <ProductsProvider>
-                <main>
+                <main className="main">
                     <Outlet />
                 </main>
             </ProductsProvider>

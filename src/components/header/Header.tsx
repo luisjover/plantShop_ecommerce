@@ -18,7 +18,7 @@ export const Header = () => {
     return (
         <header className="header">
             <Heading toggleBurgerMenu={toggleBurgerMenu} />
-            <BurgerMenu menuState={menuVisibility} />
+            <BurgerMenu menuState={menuVisibility} toggleBurgerMenu={toggleBurgerMenu} />
         </header>
     )
 }
