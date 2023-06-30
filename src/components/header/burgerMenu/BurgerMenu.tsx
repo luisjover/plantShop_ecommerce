@@ -4,15 +4,19 @@ import "./burgerMenu.css"
 
 
 export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => void }) => {
-
+    console.log(props.menuState)
     useEffect(() => {
         const burgerMenu = document.querySelector("#burger-menu");
+        const body = document.querySelector("body");
+
         burgerMenu?.classList.toggle("hidden")
 
+        if (props.menuState === true) body?.classList.add("fixed")
+        else body?.classList.remove("fixed")
 
     }, [props.menuState])
 
-    console.log(props.menuState)
+
     return (
         <div id="burger-menu" className="burger-menu">
             <nav className="burger-menu-navbar">

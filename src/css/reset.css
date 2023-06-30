@@ -71,5 +71,6 @@ h6 {
 
 .main {
   min-height: 80vh;
+  width: 100vw;
   padding-top: 20px;
 }
