@@ -4,8 +4,16 @@ export const getData = async (data: string): Promise<Product[] | User[]> => {
 
     const URL = `http://localhost:3000/${data}`
     const response = await fetch(URL);
-    const fetchedData: any = await response.json();
+    const fetchedData: Product[] | User[] = await response.json();
 
+    return fetchedData;
+}
+
+export const getUsers = async (): Promise<User[]> => {
+
+    const URL = "http://localhost:3000/users"
+    const response = await fetch(URL);
+    const fetchedData: User[] = await response.json();
 
     return fetchedData;
 }
