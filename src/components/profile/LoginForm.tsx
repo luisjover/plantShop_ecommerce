@@ -42,6 +42,8 @@ export const LoginForm = () => {
             console.log("HAZ EL CONTEXTOOOOO")
         }
 
+        reset();
+
     }
 
 
