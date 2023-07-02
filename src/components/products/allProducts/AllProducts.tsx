@@ -1,6 +1,5 @@
-import { getProducts } from "../../../api/functions/apiFetch"
+import { getData } from "../../../api/functions/apiFetch"
 import { Product } from "../../../types/types"
-import { useEffect, useState } from "react"
 import { ProductCard } from ".."
 import { useFilterContext } from "../../../utils/hooks/FilterProvider"
 import { useProductContext } from "../../../utils/hooks/ProductsProvider"
@@ -18,7 +17,7 @@ export const AllProducts = () => {
     if (products === null) {
 
         const getFetch = async () => {
-            const newProducts = await getProducts();
+            const newProducts = await getData("products") as Product[];
             updateProducts(newProducts)
         }
         getFetch()

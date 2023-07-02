@@ -1,14 +1,24 @@
-import { Filter } from ".."
-import { LoginForm } from "./login/LoginForm"
-import { RegisterForm } from "./register/RegisterForm"
+
+import { useEffect } from "react"
+import { useFilterContext } from "../../utils/hooks/FilterProvider"
+import { LoginForm } from "./LoginForm"
+import { RegisterForm } from "./RegisterForm"
+import { AccessFilters } from "../../types/types"
 
 
-export const Access = ({ ...props }) => {
+export const Access = () => {
+
+    const { currentFilter, changeFilter } = useFilterContext()
+
+    useEffect(() => {
+        changeFilter(AccessFilters.LOGIN)
+
+    }, [])
+
+
     return (
-        <div>
-            <Filter filters={props.filters} />
-            <LoginForm />
-            <RegisterForm />
-        </div>
+        <>
+            {currentFilter === "login" ? <LoginForm /> : <RegisterForm />}
+        </>
     )
 }

@@ -1,7 +1,8 @@
 import { useProductContext } from "../../../utils/hooks/ProductsProvider"
 import { useParams } from "react-router-dom"
-import { getProducts } from "../../../api/functions/apiFetch"
+import { getData } from "../../../api/functions/apiFetch"
 import "./productDetail.css"
+import { Product } from "../../../types/types"
 
 const handlePurchase = (productId: number) => {
 
@@ -14,7 +15,7 @@ export const ProductDetail = () => {
     if (products === null) {
 
         const getFetch = async () => {
-            const newProducts = await getProducts();
+            const newProducts = await getData("products") as Product[];
             updateProducts(newProducts)
         }
 

@@ -315,5 +315,25 @@
         "easycare"
       ]
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "guest",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": 2,
+      "name": "luidjin",
+      "password": "AliAli1+",
+      "email": "Kyao_69@hotmail.com"
+    },
+    {
+      "id": 3,
+      "name": "luidjin",
+      "password": "AliAli1+",
+      "email": "Kyao_69@hotmail.net"
+    }
   ]
 }
