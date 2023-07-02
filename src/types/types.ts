@@ -1,11 +1,4 @@
 
-export type FilterCategories = {
-    name: string
-    id: string
-    filter: Filters
-}
-
-
 
 export type Product = {
     id: number,
@@ -13,11 +6,24 @@ export type Product = {
     price: number,
     stock: number,
     image: string,
-    filters: Filters[]
+    filters: ProductFilters[]
 }
 
-export enum Filters {
-    topsales = "topsales",
-    easycare = "easycare",
-    petfriendly = "petfriendly"
+export type FilterCategories = {
+    name: string
+    id: string
+    filter: ProductFilters | AccessFilters
 }
+
+export enum ProductFilters {
+    TOPSALES = "topsales",
+    EASYCARE = "easycare",
+    PETFRIENDLY = "petfriendly"
+}
+
+export enum AccessFilters {
+    LOGIN = "login",
+    REGISTER = "register"
+}
+
+export type Filters = ProductFilters | AccessFilters;

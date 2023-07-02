@@ -1,12 +1,12 @@
+import { Filter } from ".."
 import { LoginForm } from "./login/LoginForm"
 import { RegisterForm } from "./register/RegisterForm"
 
 
-export const Access = () => {
+export const Access = ({ ...props }) => {
     return (
         <div>
-            <div>LOGIN</div>
-            <div>SIGN UP</div>
+            <Filter filters={props.filters} />
             <LoginForm />
             <RegisterForm />
         </div>

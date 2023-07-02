@@ -1,13 +1,13 @@
 import { Filter, AllProducts } from "../components"
 import { FilterProvider } from "../contexts/productsFilterContext"
-import { ProductsProvider } from "../contexts/allProductsContext"
+import { productsFilterCategories } from "../assets/db/gb"
 
 export const HomePage = () => {
     return (
         <>
 
             <FilterProvider>
-                <Filter />
+                <Filter filters={productsFilterCategories} />
                 <AllProducts />
             </FilterProvider>
 

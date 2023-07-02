@@ -1,12 +1,13 @@
 import { Access } from "../components/profile/Access"
+import { accessFilterCategories } from "../assets/db/gb"
 
 
 
 
 export const AccessPage = () => {
 
-    console.log("HOLA")
+
     return (
-        <Access />
+        <Access filters={accessFilterCategories} />
     )
 }
