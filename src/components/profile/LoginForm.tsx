@@ -2,8 +2,12 @@ import { useForm } from "react-hook-form"
 import "./profile.css"
 import { getUsers } from "../../api/functions/apiFetch"
 import { useState } from "react"
+import { useUserContext } from "../../utils/hooks/UserProvider"
+import { useNavigate } from "react-router-dom"
 
 export const LoginForm = () => {
+
+    const { logIn } = useUserContext()
 
     const [loginState, setLoginState] = useState("")
 
@@ -16,12 +20,14 @@ export const LoginForm = () => {
         }
     )
 
+    const navigate = useNavigate()
+
     let message = "";
 
     const onSubmit = async () => {
 
         const allUsers = await getUsers();
-        const sucessfulLogin = allUsers.find((user) => {
+        const sucessfulloggedUser = allUsers.find((user) => {
             if (user.email === watch("email")) {
                 if (user.password === watch("password")) {
                     message = ""
@@ -38,11 +44,14 @@ export const LoginForm = () => {
 
         setLoginState(message);
 
-        if (sucessfulLogin) {
-            console.log("HAZ EL CONTEXTOOOOO")
+        if (sucessfulloggedUser) {
+            logIn(watch("email"))
+            localStorage.setItem("loggedUser", JSON.stringify(sucessfulloggedUser))
+            navigate("/", { replace: true })
+            reset();
         }
 
-        reset();
+
 
     }
 

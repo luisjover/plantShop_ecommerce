@@ -22,7 +22,14 @@ export type FilterCategories = {
     filter: ProductFilters | AccessFilters
 }
 
-export type Filters = ProductFilters | AccessFilters;
+export type Filters =
+    | ProductFilters
+    | AccessFilters
+
+export type UserActions =
+    | { type: "LOG_IN", payload: string }
+    | { type: "LOG_OUT" }
+
 
 export enum ProductFilters {
     TOPSALES = "topsales",

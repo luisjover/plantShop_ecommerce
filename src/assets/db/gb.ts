@@ -32,3 +32,9 @@ export const accessFilterCategories: FilterCategories[] = [
         filter: AccessFilters.REGISTER
     },
 ]
+
+export const guestUser = {
+    name: "",
+    email: "",
+    password: ""
+}
