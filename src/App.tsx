@@ -1,16 +1,22 @@
 
+import { UserPreLog } from './components/profile/userPreLog/UserPreLog'
 import { RouterPaths } from './routes/RouterPaths.routes'
+import { useUserContext } from './utils/hooks/UserProvider'
 
 
 
-function App() {
+
+
+export function App() {
+
+  const { logIn, logOut } = useUserContext()
 
 
   return (
 
-    <RouterPaths />
-
+    <>
+      <UserPreLog logIn={logIn} logOut={logOut} />
+      <RouterPaths />
+    </>
   )
 }
-
-export default App

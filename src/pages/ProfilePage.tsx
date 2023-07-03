@@ -11,6 +11,7 @@ export const ProfilePage = () => {
         localStorage.setItem("loggedUser", JSON.stringify(guestUser))
         logOut()
     }
+
     return (
         <>
             {userEmail === "" ? <div>Guest Account</div> : <div>Guest Account</div>}
