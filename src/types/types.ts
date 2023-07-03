@@ -3,8 +3,9 @@
 export type User = {
     id: number,
     name: string,
-    password: string,
-    email: string
+    password?: string,
+    email: string,
+    cart: CartProduct[]
 }
 
 export type Product = {
@@ -29,6 +30,13 @@ export type Filters =
 export type UserActions =
     | { type: "LOG_IN", payload: string }
     | { type: "LOG_OUT" }
+
+export type CartProduct = {
+    id: number,
+    name: string,
+    price: number,
+    quantity: number
+}
 
 
 export enum ProductFilters {

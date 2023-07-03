@@ -1,6 +1,6 @@
 import { Filter, AllProducts } from "../components"
 import { FilterProvider } from "../contexts/productsFilterContext"
-import { productsFilterCategories } from "../assets/db/gb"
+import { productsFilterCategories } from "../assets/db/globalVariables"
 
 
 export const HomePage = () => {

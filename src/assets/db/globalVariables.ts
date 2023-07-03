@@ -1,5 +1,5 @@
 
-import { FilterCategories, ProductFilters, AccessFilters } from "../../types/types"
+import { FilterCategories, ProductFilters, AccessFilters, User } from "../../types/types"
 
 
 export const productsFilterCategories: FilterCategories[] = [
@@ -33,8 +33,10 @@ export const accessFilterCategories: FilterCategories[] = [
     },
 ]
 
-export const guestUser = {
+export const guestUser: User = {
+    id: 1,
     name: "",
     email: "",
-    password: ""
+    password: "",
+    cart: []
 }

@@ -1,5 +1,5 @@
-import { useUserContext } from '../../../utils/hooks/UserProvider'
-import { guestUser } from '../../../assets/db/gb'
+
+import { guestUser } from '../../../assets/db/globalVariables'
 import { User } from '../../../types/types'
 import { useEffect } from 'react'
 
@@ -17,13 +17,8 @@ export const UserPreLog = ({ ...props }) => {
             props.logIn(loggedUser.email)
         }
 
-
     }, [props.logIn, props.logOut])
 
 
-
-
-    return (
-        <div>UserPreLog</div>
-    )
+    return null
 }

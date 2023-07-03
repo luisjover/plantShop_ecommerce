@@ -21,12 +21,6 @@ export const RegisterForm = () => {
         }
     )
 
-    // const currentEmail = watch("email")
-    // const currentUsername = watch("username")
-    // const currentPassword = watch("password")
-
-
-
     const onSubmit = async () => {
         setAlreadyExisting(false)
         const users = await getData("users") as User[];
@@ -42,7 +36,8 @@ export const RegisterForm = () => {
             id: newId,
             name: watch("username"),
             password: watch("password"),
-            email: watch("email")
+            email: watch("email"),
+            cart: []
         }
 
         await setNewUser(newUser)

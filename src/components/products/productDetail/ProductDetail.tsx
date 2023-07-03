@@ -1,12 +1,12 @@
 import { useProductContext } from "../../../utils/hooks/ProductsProvider"
 import { useParams } from "react-router-dom"
 import { getData } from "../../../api/functions/apiFetch"
-import "./productDetail.css"
 import { Product } from "../../../types/types"
+import { checkLoggedUser } from "../../../utils/functions/checkLoggedUser"
+import "./productDetail.css"
+import { addToCart } from "../../../utils/functions/addToCart"
 
-const handlePurchase = (productId: number) => {
 
-}
 
 export const ProductDetail = () => {
 
@@ -33,6 +33,12 @@ export const ProductDetail = () => {
     const selectedProduct = products.find((product) => product.id === parseInt(selectedProductId))
 
     if (selectedProduct === undefined) return
+
+    const handlePurchase = (selectedProductId: number) => {
+
+        const purchasingProduct = products.find((product) => product.id === selectedProductId) as Product
+        addToCart(purchasingProduct)
+    }
 
     return (
         <section className="product-detail-container">
