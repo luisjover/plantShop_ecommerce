@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form"
-import "./profile.css"
 import { getUsers } from "../../api/functions/apiFetch"
 import { useState } from "react"
 import { useUserContext } from "../../utils/hooks/UserProvider"
 import { useNavigate } from "react-router-dom"
 import { setLoggedUser } from "../../utils/functions/handleLocalStorage"
+import "./profile.css"
 
 export const LoginForm = () => {
 

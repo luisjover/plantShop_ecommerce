@@ -1,7 +1,7 @@
 import { CgMenuLeft } from "react-icons/cg"
 import { HiOutlineShoppingBag } from "react-icons/hi"
-import "./heading.css"
 import { useNavigate } from "react-router-dom"
+import "./heading.css"
 
 
 

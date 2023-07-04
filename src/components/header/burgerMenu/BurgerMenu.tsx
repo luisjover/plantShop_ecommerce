@@ -7,8 +7,6 @@ export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => 
 
     useEffect(() => {
         const burgerMenu = document.querySelector("#burger-menu");
-        const navbar = document.querySelector("#burger-menu-navbar");
-        const closeBtn = document.querySelector("#burger-menu-close-btn");
         const body = document.querySelector("body");
 
         if (props.menuState === true) {

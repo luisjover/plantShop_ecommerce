@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { getData, updateUserCart } from "../../../api/functions/apiFetch";
-import { ButtonAction, CartProduct, Product, User } from "../../../types/types"
+import { Product, User } from "../../../types/types"
 import { checkLoggedUser } from "../../../utils/functions/handleLocalStorage"
 import { useProductContext } from "../../../utils/hooks/ProductsProvider";
-import { ItemCounter } from "../../counter/ItemCounter";
-import { updateStorageCart } from "../../../utils/functions/addToCart";
+import { updateStorageCart } from "../../../utils/functions/manageCart";
 
 
 
