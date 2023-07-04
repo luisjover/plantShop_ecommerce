@@ -4,22 +4,32 @@ import "./burgerMenu.css"
 
 
 export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => void }) => {
-    console.log(props.menuState)
+
     useEffect(() => {
         const burgerMenu = document.querySelector("#burger-menu");
+        const navbar = document.querySelector("#burger-menu-navbar");
+        const closeBtn = document.querySelector("#burger-menu-close-btn");
         const body = document.querySelector("body");
 
-        burgerMenu?.classList.toggle("hidden")
+        if (props.menuState === true) {
+            burgerMenu?.classList.remove("reduced")
+            body?.classList.add("fixed")
+            // navbar?.classList.remove("hidden")
+            // closeBtn?.classList.remove("hidden")
+        } else {
+            burgerMenu?.classList.add("reduced")
+            body?.classList.remove("fixed")
+            // navbar?.classList.add("hidden")
+            // closeBtn?.classList.add("hidden")
+        }
 
-        if (props.menuState === true) body?.classList.add("fixed")
-        else body?.classList.remove("fixed")
 
     }, [props.menuState])
 
 
     return (
         <div id="burger-menu" className="burger-menu">
-            <nav className="burger-menu-navbar">
+            <nav id="burger-menu-navbar" className="burger-menu-navbar">
                 <Link to="/"
                     onClick={() => props.toggleBurgerMenu()}
                 >Home</Link>
@@ -30,11 +40,11 @@ export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => 
                     onClick={() => props.toggleBurgerMenu()}
                 >About Us</Link>
             </nav>
-            <button className="burger-menu-close-btn"
+            <div id="burger-menu-close-btn" className="burger-menu-close-btn"
                 onClick={() => props.toggleBurgerMenu()}
             >
                 X
-            </button>
+            </div>
 
 
 

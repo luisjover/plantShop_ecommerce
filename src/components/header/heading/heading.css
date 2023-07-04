@@ -24,5 +24,30 @@
 }
 
 .main-logo {
-    width: 40vw;
+    width: 156px;
+    height: 20px;
+}
+
+.cart-btn {
+    position: relative;
+}
+
+.cart-btn-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: whitesmoke;
+    background-color: #202020;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }

@@ -12,21 +12,22 @@ export const Heading = (props: { toggleBurgerMenu: () => void }) => {
 
     return (
         <div className="header-heading">
-            <button className="menu-btn" onClick={() => props.toggleBurgerMenu()}>
+            <div className="menu-btn" onClick={() => props.toggleBurgerMenu()}>
                 <figure>
                     <CgMenuLeft className="menu-icon" />
                 </figure>
-            </button>
+            </div>
 
             <figure>
-                <img src="/src/assets/images/App/MONSTERA LOGO.webp" alt="Monstera Main Logo" className="main-logo" />
+                <img src="/src/assets/images/App/logo.webp" alt="Monstera Main Logo" className="main-logo" />
             </figure>
 
-            <button className="cart-btn" onClick={() => navigate("/shopingcart")}>
+            <div className="cart-btn" onClick={() => navigate("/shopingcart")}>
                 <figure>
                     <HiOutlineShoppingBag className="cart-icon" />
                 </figure>
-            </button>
+                <span className="cart-btn-number">2</span>
+            </div>
         </div>
     )
 }

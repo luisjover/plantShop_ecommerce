@@ -1,13 +1,12 @@
 import { Heading } from "./heading/Heading"
 import { BurgerMenu } from "./burgerMenu/BurgerMenu"
 import { useState } from "react"
-import { useUserContext } from "../../utils/hooks/UserProvider"
+// import { useUserContext } from "../../utils/hooks/UserProvider"
 import "./header.css"
 
 export const Header = () => {
 
-    const { userEmail } = useUserContext()
-    console.log(userEmail)
+    // const { userEmail } = useUserContext()
 
     const [menuVisibility, setMenuVisibility] = useState(false)
 

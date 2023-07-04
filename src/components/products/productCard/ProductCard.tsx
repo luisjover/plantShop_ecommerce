@@ -10,7 +10,7 @@ export const ProductCard = (props: Product) => {
                 <figure className="product-card-figure">
                     <img className="product-card-img" src={props.image} alt={`Image of a ${props.name} plant`} />
                 </figure>
-                <h6>{props.name}</h6>
+                <h3>{props.name}</h3>
                 <p>{props.price}</p>
             </div>
         </Link>

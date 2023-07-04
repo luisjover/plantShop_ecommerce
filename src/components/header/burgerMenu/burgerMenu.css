@@ -8,10 +8,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
     height: 100vh;
     width: 100vw;
     background-color: rgba(124, 184, 85, .9);
+    transition: width .3s;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -ms-transition: width .3s;
+    -o-transition: width .3s;
 }
 
 .burger-menu-navbar {
@@ -20,14 +24,23 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: hidden;
 
 }
 
 .burger-menu-close-btn {
+    margin-right: 5px;
     height: fit-content;
+    overflow: hidden;
 
 }
 
+.reduced {
+    width: 0vw;
+}
+
 .hidden {
+
     display: none;
+
 }
