@@ -1,21 +1,19 @@
 
 import { guestUser } from '../../../assets/db/globalVariables'
-import { User } from '../../../types/types'
 import { useEffect } from 'react'
+import { checkLoggedUser, setLoggedUser } from '../../../utils/functions/handleLocalStorage'
 
 export const UserPreLog = ({ ...props }) => {
     useEffect(() => {
 
-        const storagedUser = localStorage.getItem("loggedUser")
+        const currentUser = checkLoggedUser()
 
 
-        if (!storagedUser) {
+        if (!currentUser) {
             props.logOut()
-            localStorage.setItem("loggedUser", JSON.stringify(guestUser))
-        } else {
-            const loggedUser: User = JSON.parse(storagedUser)
-            props.logIn(loggedUser.email)
-        }
+            setLoggedUser(guestUser)
+        } else props.logIn(currentUser.email)
+
 
     }, [props.logIn, props.logOut])
 

@@ -1,6 +1,6 @@
 import { updateUserCart } from "../../api/functions/apiFetch";
 import { CartProduct, Product, User } from "../../types/types";
-import { checkLoggedUser } from "./checkLoggedUser";
+import { checkLoggedUser, setLoggedUser } from "./handleLocalStorage";
 
 
 export const addToCart = ({ ...props }: Product) => {
@@ -12,7 +12,7 @@ export const addToCart = ({ ...props }: Product) => {
         quantity: 1
     }
 
-    const currentUser = checkLoggedUser()
+    const currentUser = checkLoggedUser() as User
     let currentCart = currentUser.cart
 
 
@@ -31,7 +31,7 @@ export const addToCart = ({ ...props }: Product) => {
 }
 
 export const updateStorageCart = (newCart: CartProduct[]) => {
-    const currentUser = checkLoggedUser()
+    const currentUser = checkLoggedUser() as User
     currentUser.cart = newCart
-    localStorage.setItem("loggedUser", JSON.stringify(currentUser))
+    setLoggedUser(currentUser)
 }

@@ -4,6 +4,7 @@ import { getUsers } from "../../api/functions/apiFetch"
 import { useState } from "react"
 import { useUserContext } from "../../utils/hooks/UserProvider"
 import { useNavigate } from "react-router-dom"
+import { setLoggedUser } from "../../utils/functions/handleLocalStorage"
 
 export const LoginForm = () => {
 
@@ -46,7 +47,7 @@ export const LoginForm = () => {
 
         if (sucessfulloggedUser) {
             logIn(watch("email"))
-            localStorage.setItem("loggedUser", JSON.stringify(sucessfulloggedUser))
+            setLoggedUser(sucessfulloggedUser)
             navigate("/", { replace: true })
             reset();
         }
