@@ -1,7 +1,8 @@
+import { ShopingCart } from "../components/products/shopingCart/ShopingCart"
 
 
 export const ShopingCartPage = () => {
     return (
-        <div>ShopingCartPage</div>
+        <ShopingCart />
     )
 }

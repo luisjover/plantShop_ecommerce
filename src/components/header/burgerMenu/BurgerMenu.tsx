@@ -12,12 +12,12 @@ export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => 
         const body = document.querySelector("body");
 
         if (props.menuState === true) {
-            burgerMenu?.classList.remove("reduced")
+            burgerMenu?.classList.add("shown")
             body?.classList.add("fixed")
             // navbar?.classList.remove("hidden")
             // closeBtn?.classList.remove("hidden")
         } else {
-            burgerMenu?.classList.add("reduced")
+            burgerMenu?.classList.remove("shown")
             body?.classList.remove("fixed")
             // navbar?.classList.add("hidden")
             // closeBtn?.classList.add("hidden")
