@@ -1,7 +1,11 @@
-import { getData } from "../../../api/functions/apiFetch";
-import { Product, User } from "../../../types/types"
+import { useState } from "react";
+import { getData, updateUserCart } from "../../../api/functions/apiFetch";
+import { ButtonAction, CartProduct, Product, User } from "../../../types/types"
 import { checkLoggedUser } from "../../../utils/functions/handleLocalStorage"
 import { useProductContext } from "../../../utils/hooks/ProductsProvider";
+import { ItemCounter } from "../../counter/ItemCounter";
+import { updateStorageCart } from "../../../utils/functions/addToCart";
+
 
 
 export const ShopingCart = () => {
@@ -18,7 +22,45 @@ export const ShopingCart = () => {
     }
 
     const currentUser = checkLoggedUser() as User;
-    const currentCart = currentUser.cart;
+
+
+    const [currentCart, setCurrentCart] = useState(currentUser.cart)
+
+    const incrementItem = (productId: number) => {
+
+        const productIndex = currentCart.findIndex((product) => product.id === productId)
+        const newCart = currentUser.cart
+        newCart[productIndex].quantity += 1
+        setCurrentCart(newCart)
+        updateUserCart(currentUser.id.toString(), newCart)
+        updateStorageCart(newCart)
+
+
+    }
+
+    const decrementItem = (productId: number) => {
+
+        const productIndex = currentCart.findIndex((product) => product.id === productId)
+        const newCart = currentUser.cart
+        newCart[productIndex].quantity -= 1
+        if (newCart[productIndex].quantity === 0) {
+            deleteItem(productId)
+            return
+        }
+        setCurrentCart(newCart)
+        updateUserCart(currentUser.id.toString(), newCart)
+        updateStorageCart(newCart)
+    }
+
+    const deleteItem = (productId: number) => {
+        const productIndex = currentCart.findIndex((product) => product.id === productId)
+        const newCart = currentUser.cart
+        newCart.splice(productIndex, 1)
+        setCurrentCart(newCart)
+        updateUserCart(currentUser.id.toString(), newCart)
+        updateStorageCart(newCart)
+    }
+
 
 
     return (
@@ -34,6 +76,11 @@ export const ShopingCart = () => {
                         </figure>
                         <span>{cartProduct.price} €</span>
                         <span> x {cartProduct.quantity} units</span>
+                        <div>
+                            <button onClick={() => incrementItem(cartProduct.id)} >+</button>
+                            <button onClick={() => decrementItem(cartProduct.id)} >-</button>
+                            <button onClick={() => deleteItem(cartProduct.id)} >c</button>
+                        </div>
                     </div>
                 )
             })}

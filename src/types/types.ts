@@ -31,6 +31,31 @@ export type UserActions =
     | { type: "LOG_IN", payload: string }
     | { type: "LOG_OUT" }
 
+export type ButtonAction = {
+    initialValue?: number;
+    label: string;
+    action: any;
+    id?: string;
+    display: string;
+    getState?: any;
+    title?: string;
+    price?: string;
+};
+
+export type CounterActions =
+    | { type: "increase" }
+    | { type: "decrease" }
+    | { type: "reset" }
+    | { type: "purchase" };
+
+export type UpdateCounter = {
+    type: "update";
+    payload: {
+        counterValue: number;
+        productId: string;
+    };
+}
+
 export type CartProduct = {
     id: number,
     name: string,

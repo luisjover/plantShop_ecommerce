@@ -35,7 +35,7 @@ export const accessFilterCategories: FilterCategories[] = [
 
 export const guestUser: User = {
     id: 1,
-    name: "",
+    name: "guest",
     email: "",
     password: "",
     cart: []

@@ -3,12 +3,16 @@ import { useParams } from "react-router-dom"
 import { getData } from "../../../api/functions/apiFetch"
 import { Product } from "../../../types/types"
 import { addToCart } from "../../../utils/functions/addToCart"
+import { ItemCounter } from "../../counter/ItemCounter"
+import { useReducer } from "react"
+import { counterReducer } from "../../../utils/functions/counterReducer"
 import "./productDetail.css"
 
 
 
 export const ProductDetail = () => {
 
+    //All PRODUCTS CONTEXT AND API CALL CONTROL
     const { products, updateProducts } = useProductContext()
 
     if (products === null) {
@@ -21,6 +25,12 @@ export const ProductDetail = () => {
         getFetch()
     }
 
+    //REDUCER COUNTER
+    const initialValue = { counter: 0 };
+
+    const [counter, dispatch] = useReducer(counterReducer, initialValue);
+
+    //PARAMS AND SELECED PRODUCT IDENTIFICATION
     const params = useParams();
 
     const selectedProductId = params.productId
@@ -33,11 +43,14 @@ export const ProductDetail = () => {
 
     if (selectedProduct === undefined) return
 
+
     const handlePurchase = (selectedProductId: number) => {
 
         const purchasingProduct = products.find((product) => product.id === selectedProductId) as Product
-        addToCart(purchasingProduct)
+        addToCart(purchasingProduct, counter.counter)
+        dispatch({ type: "reset" })
     }
+
 
     return (
         <section className="product-detail-container">
@@ -46,7 +59,19 @@ export const ProductDetail = () => {
                 <img src={selectedProduct.image[1]} alt={`Image of a ${selectedProduct.name} plant`} />
             </figure>
             <p>{`${selectedProduct?.price} €`}</p>
-            <button onClick={() => handlePurchase(selectedProduct.id)}>Add to Cart</button>
+
+            < ItemCounter dispatch={dispatch}
+                // handlePurchase={handlePurchase}
+                // selectedId={selectedProduct.id}
+                counter={counter}
+            />
+            <button
+                className="btn-counter"
+                onClick={() => handlePurchase(selectedProduct.id)}
+                disabled={counter.counter <= 0}
+            >
+                ADD TO CART
+            </button>
         </section>
     )
 }

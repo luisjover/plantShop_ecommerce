@@ -3,13 +3,13 @@ import { CartProduct, Product, User } from "../../types/types";
 import { checkLoggedUser, setLoggedUser } from "./handleLocalStorage";
 
 
-export const addToCart = ({ ...props }: Product) => {
+export const addToCart = ({ ...props }: Product, quantity: number) => {
 
     const productToCart: CartProduct = {
         id: props.id,
         name: props.name,
         price: props.price,
-        quantity: 1
+        quantity: quantity
     }
 
     const currentUser = checkLoggedUser() as User
@@ -22,10 +22,10 @@ export const addToCart = ({ ...props }: Product) => {
 
     if (alreadyPurchased === undefined) currentCart.push(productToCart)
     else {
-        alreadyPurchased.quantity += 1
+        alreadyPurchased.quantity += quantity
     }
 
-    updateUserCart(props.id.toString(), currentCart)
+    updateUserCart(currentUser.id.toString(), currentCart)
     updateStorageCart(currentCart)
 
 }

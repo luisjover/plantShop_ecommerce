@@ -53,7 +53,8 @@ export const getProductById = async (id: string) => {
 
 export const updateUserCart = async (userId: string, newCart: CartProduct[]) => {
 
-
+    console.log(userId)
+    console.log(newCart)
     const URL = `http://localhost:3000/users/${userId}`
     const response = await fetch(URL, {
         method: "PATCH",
