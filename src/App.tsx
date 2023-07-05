@@ -1,5 +1,5 @@
 
-import { CartPreLoad } from './components/products/shopingCart/cartContentPreLoad/CartContentPreLoad'
+import { CartPreLoad } from './components/shopingCart/cartContentPreLoad/CartContentPreLoad'
 import { UserPreLog } from './components/profile/userPreLog/UserPreLog'
 import { RouterPaths } from './routes/RouterPaths.routes'
 import { useCartContentContext } from './utils/hooks/CartContentProvider'

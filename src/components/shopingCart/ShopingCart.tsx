@@ -1,15 +1,18 @@
 
-import { getData, updateUserCart } from "../../../api/functions/apiFetch";
-import { Product, User } from "../../../types/types"
-import { checkLoggedUser } from "../../../utils/functions/handleLocalStorage"
-import { useProductContext } from "../../../utils/hooks/ProductsProvider";
-import { updateStorageCart } from "../../../utils/functions/manageCart";
-import { useCartContentContext } from "../../../utils/hooks/CartContentProvider";
-import { getTotalPrice } from "../../../utils/functions/getTotalPrice";
+import { getData, updateUserCart } from "../../api/functions/apiFetch";
+import { Product, User } from "../../types/types"
+import { checkLoggedUser } from "../../utils/functions/handleLocalStorage"
+import { useProductContext } from "../../utils/hooks/ProductsProvider";
+import { updateStorageCart } from "../../utils/functions/manageCart";
+import { useCartContentContext } from "../../utils/hooks/CartContentProvider";
+import { getTotalPrice } from "../../utils/functions/getTotalPrice";
+import { useNavigate } from "react-router-dom";
 
 
 
 export const ShopingCart = () => {
+
+    const navigate = useNavigate()
 
     const { products, updateProducts } = useProductContext()
 
@@ -86,7 +89,7 @@ export const ShopingCart = () => {
                 )
             })}
             <p>Total: {getTotalPrice(cartContent)} €</p>
-            <button>Checkout</button>
+            <button onClick={() => navigate("checkout", { replace: true })} >Checkout</button>
         </div>
     )
 }

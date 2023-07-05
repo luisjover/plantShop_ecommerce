@@ -1,4 +1,4 @@
-import { ShopingCart } from "../components/products/shopingCart/ShopingCart"
+import { ShopingCart } from "../components/shopingCart/ShopingCart"
 
 
 export const ShopingCartPage = () => {
