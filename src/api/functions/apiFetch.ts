@@ -21,7 +21,7 @@ export const getUsers = async (): Promise<User[]> => {
 export const getUserById = async (id: string) => {
     const URL = `http://localhost:3000/users/${id}`
     const response = await fetch(URL);
-    const fetchedData: User[] = await response.json();
+    const fetchedData: User = await response.json();
 
     return fetchedData;
 }
