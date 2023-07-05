@@ -3,7 +3,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi"
 import { useNavigate } from "react-router-dom"
 import "./heading.css"
 import { useCartContentContext } from "../../../utils/hooks/CartContentProvider"
-import { CartProduct } from "../../../types/types"
+
 
 
 

@@ -1,9 +1,10 @@
-import { useState } from "react";
+
 import { getData, updateUserCart } from "../../../api/functions/apiFetch";
 import { Product, User } from "../../../types/types"
 import { checkLoggedUser } from "../../../utils/functions/handleLocalStorage"
 import { useProductContext } from "../../../utils/hooks/ProductsProvider";
 import { updateStorageCart } from "../../../utils/functions/manageCart";
+import { useCartContentContext } from "../../../utils/hooks/CartContentProvider";
 
 
 
@@ -23,14 +24,14 @@ export const ShopingCart = () => {
     const currentUser = checkLoggedUser() as User;
 
 
-    const [currentCart, setCurrentCart] = useState(currentUser.cart)
+    const { cartContent, updateCartContent } = useCartContentContext()
 
     const incrementItem = (productId: number) => {
 
-        const productIndex = currentCart.findIndex((product) => product.id === productId)
+        const productIndex = cartContent.findIndex((product) => product.id === productId)
         const newCart = currentUser.cart
         newCart[productIndex].quantity += 1
-        setCurrentCart(newCart)
+        updateCartContent(newCart)
         updateUserCart(currentUser.id.toString(), newCart)
         updateStorageCart(newCart)
 
@@ -39,23 +40,23 @@ export const ShopingCart = () => {
 
     const decrementItem = (productId: number) => {
 
-        const productIndex = currentCart.findIndex((product) => product.id === productId)
+        const productIndex = cartContent.findIndex((product) => product.id === productId)
         const newCart = currentUser.cart
         newCart[productIndex].quantity -= 1
         if (newCart[productIndex].quantity === 0) {
             deleteItem(productId)
             return
         }
-        setCurrentCart(newCart)
+        updateCartContent(newCart)
         updateUserCart(currentUser.id.toString(), newCart)
         updateStorageCart(newCart)
     }
 
     const deleteItem = (productId: number) => {
-        const productIndex = currentCart.findIndex((product) => product.id === productId)
+        const productIndex = cartContent.findIndex((product) => product.id === productId)
         const newCart = currentUser.cart
         newCart.splice(productIndex, 1)
-        setCurrentCart(newCart)
+        updateCartContent(newCart)
         updateUserCart(currentUser.id.toString(), newCart)
         updateStorageCart(newCart)
     }
@@ -64,7 +65,7 @@ export const ShopingCart = () => {
 
     return (
         <div>
-            {currentCart.map((cartProduct) => {
+            {cartContent.map((cartProduct) => {
                 const cartProductId = cartProduct.id;
                 const fullProduct = products?.find((product) => product.id === cartProductId)
                 return (

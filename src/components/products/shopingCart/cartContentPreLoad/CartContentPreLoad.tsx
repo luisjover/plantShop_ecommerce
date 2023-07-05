@@ -10,10 +10,11 @@ export const CartPreLoad = ({ cartContent, updateCartContent }: { cartContent: C
         const currentCart = checkLoggedUser()?.cart
 
         if (currentCart === undefined) return
+        if (currentCart === cartContent) return
         updateCartContent(currentCart)
 
 
-    }, [cartContent])
+    }, [])
 
 
     return null

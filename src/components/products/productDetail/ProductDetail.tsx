@@ -7,6 +7,7 @@ import { ItemCounter } from "../../counter/ItemCounter"
 import { useReducer } from "react"
 import { counterReducer } from "../../../utils/functions/counterReducer"
 import "./productDetail.css"
+import { useCartContentContext } from "../../../utils/hooks/CartContentProvider"
 
 
 
@@ -14,6 +15,7 @@ export const ProductDetail = () => {
 
     //All PRODUCTS CONTEXT AND API CALL CONTROL
     const { products, updateProducts } = useProductContext()
+    const { updateCartContent } = useCartContentContext()
 
     if (products === null) {
 
@@ -30,7 +32,7 @@ export const ProductDetail = () => {
 
     const [counter, dispatch] = useReducer(counterReducer, initialValue);
 
-    //PARAMS AND SELECED PRODUCT IDENTIFICATION
+    //PARAMS AND SELECTED PRODUCT IDENTIFICATION
     const params = useParams();
 
     const selectedProductId = params.productId
@@ -47,7 +49,7 @@ export const ProductDetail = () => {
     const handlePurchase = (selectedProductId: number) => {
 
         const purchasingProduct = products.find((product) => product.id === selectedProductId) as Product
-        addToCart(purchasingProduct, counter.counter)
+        addToCart(purchasingProduct, counter.counter, updateCartContent)
         dispatch({ type: "reset" })
     }
 
