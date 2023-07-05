@@ -63,8 +63,6 @@ export const ProductDetail = () => {
             <p>{`${selectedProduct?.price} €`}</p>
 
             < ItemCounter dispatch={dispatch}
-                // handlePurchase={handlePurchase}
-                // selectedId={selectedProduct.id}
                 counter={counter}
             />
             <button

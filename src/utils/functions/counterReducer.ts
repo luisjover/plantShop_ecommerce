@@ -10,10 +10,12 @@ export function counterReducer(state: { counter: number }, action: CounterAction
             }
 
         case "decrease":
-            return {
-                ...state,
-                counter: state.counter - 1
-            }
+            if (state.counter > 0) {
+                return {
+                    ...state,
+                    counter: state.counter - 1
+                }
+            } else return state
 
         case "reset":
             return {
