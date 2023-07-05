@@ -6,14 +6,14 @@ import "./filterButton.css"
 
 export const FilterButton: FC<FilterCategories> = ({ ...props }) => {
 
-    const filterContext = useFilterContext()
+    const { changeFilter } = useFilterContext()
 
 
     return (
 
         <>
             <input id={props.id} name="filter" type="radio" className="filter-input" value={props.id}
-                onChange={() => filterContext.changeFilter(props.filter)} />
+                onChange={() => changeFilter(props.filter)} defaultChecked={props.filter === "topsales"} />
             <label htmlFor={props.id} className="filter-label">
                 {props.name}
             </label>
