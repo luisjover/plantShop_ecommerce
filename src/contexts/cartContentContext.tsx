@@ -4,10 +4,10 @@ import { CartProduct } from "../types/types";
 
 
 
-export const cartContentContext = createContext<{ cartContent: CartProduct[] | null, updateCartContent: (cartContent: CartProduct[]) => void }>({ cartContent: null, updateCartContent: () => { } })
+export const cartContentContext = createContext<{ cartContent: CartProduct[], updateCartContent: (cartContent: CartProduct[]) => void }>({ cartContent: [], updateCartContent: () => { } })
 
 export function CartContentProvider({ ...props }) {
-    const [cartContent, setCartContent] = useState<CartProduct[] | null>(null)
+    const [cartContent, setCartContent] = useState<CartProduct[]>([])
 
     const updateCartContent = (cartContent: CartProduct[]) => {
         setCartContent(cartContent)

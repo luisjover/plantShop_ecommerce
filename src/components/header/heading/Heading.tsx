@@ -2,11 +2,15 @@ import { CgMenuLeft } from "react-icons/cg"
 import { HiOutlineShoppingBag } from "react-icons/hi"
 import { useNavigate } from "react-router-dom"
 import "./heading.css"
+import { useCartContentContext } from "../../../utils/hooks/CartContentProvider"
+import { CartProduct } from "../../../types/types"
 
 
 
 
 export const Heading = (props: { toggleBurgerMenu: () => void }) => {
+
+    const { cartContent } = useCartContentContext()
 
     const navigate = useNavigate()
 
@@ -26,7 +30,7 @@ export const Heading = (props: { toggleBurgerMenu: () => void }) => {
                 <figure>
                     <HiOutlineShoppingBag className="cart-icon" />
                 </figure>
-                <span className="cart-btn-number">2</span>
+                {cartContent.length > 0 ? <span className="cart-btn-number">{cartContent?.length}</span> : null}
             </div>
         </div>
     )
