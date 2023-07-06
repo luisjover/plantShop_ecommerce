@@ -49,7 +49,7 @@ export const PurchaseForm = () => {
 
         reset()
 
-        navigate("purchaseconfirmed", { replace: true })
+        navigate("/purchaseconfirmed", { replace: true })
 
     }
 

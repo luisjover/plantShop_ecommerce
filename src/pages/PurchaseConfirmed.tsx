@@ -1,9 +1,10 @@
 
 
 
-
 export const PurchaseConfirmed = () => {
     return (
-        <div>PurchaseConfirmed</div>
+        <>
+            <div>confirmacion</div>
+        </>
     )
 }

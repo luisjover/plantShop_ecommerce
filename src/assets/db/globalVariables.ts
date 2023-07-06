@@ -32,11 +32,3 @@ export const accessFilterCategories: FilterCategories[] = [
         filter: AccessFilters.REGISTER
     },
 ]
-
-export const guestUser: User = {
-    id: 1,
-    name: "guest",
-    email: "",
-    password: "",
-    cart: []
-}

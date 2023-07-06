@@ -37,7 +37,8 @@ export const RegisterForm = () => {
             name: watch("username"),
             password: watch("password"),
             email: watch("email"),
-            cart: []
+            cart: [],
+            wishlist: []
         }
 
         await setNewUser(newUser)

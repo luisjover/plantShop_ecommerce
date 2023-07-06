@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
+import { AiOutlineClose } from "react-icons/ai";
 import "./burgerMenu.css"
 
 
@@ -28,20 +29,21 @@ export const BurgerMenu = (props: { menuState: boolean, toggleBurgerMenu: () => 
     return (
         <div id="burger-menu" className="burger-menu">
             <nav id="burger-menu-navbar" className="burger-menu-navbar">
-                <Link to="/"
-                    onClick={() => props.toggleBurgerMenu()}
-                >Home</Link>
-                <Link to="/profile"
+                <Link className="navbar-link" to="/" onClick={() => props.toggleBurgerMenu()}>
+                    <span>Home</span>
+                </Link>
+
+                <Link className="navbar-link" to="/profile"
                     onClick={() => props.toggleBurgerMenu()}
                 >Profile</Link>
-                <Link to="/aboutus"
+                <Link className="navbar-link" to="/aboutus"
                     onClick={() => props.toggleBurgerMenu()}
                 >About Us</Link>
             </nav>
             <div id="burger-menu-close-btn" className="burger-menu-close-btn"
                 onClick={() => props.toggleBurgerMenu()}
             >
-                X
+                <AiOutlineClose className="close-btn-icon" />
             </div>
 
 

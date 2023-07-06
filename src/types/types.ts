@@ -1,11 +1,12 @@
-
+import { IconType } from "react-icons"
 
 export type User = {
     id: number,
     name: string,
     password?: string,
     email: string,
-    cart: CartProduct[]
+    cart: CartProduct[],
+    wishlist: CartProduct[]
 }
 
 export type Product = {
@@ -31,16 +32,7 @@ export type UserActions =
     | { type: "LOG_IN", payload: string }
     | { type: "LOG_OUT" }
 
-export type ButtonAction = {
-    initialValue?: number;
-    label: string;
-    action: any;
-    id?: string;
-    display: string;
-    getState?: any;
-    title?: string;
-    price?: string;
-};
+
 
 export type CounterActions =
     | { type: "increase" }

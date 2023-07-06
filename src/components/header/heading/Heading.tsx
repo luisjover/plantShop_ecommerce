@@ -22,9 +22,11 @@ export const Heading = (props: { toggleBurgerMenu: () => void }) => {
                 </figure>
             </div>
 
-            <figure>
-                <img src="/src/assets/images/App/logo.webp" alt="Monstera Main Logo" className="main-logo" />
-            </figure>
+            <div onClick={() => navigate("/")}>
+                <figure>
+                    <img src="/src/assets/images/App/logo.webp" alt="Monstera Main Logo" className="main-logo" />
+                </figure>
+            </div>
 
             <div className="cart-btn" onClick={() => navigate("/shopingcart")}>
                 <figure>

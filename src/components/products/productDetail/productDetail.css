@@ -5,3 +5,29 @@
 .img-container {
     margin: 20px 0;
 }
+
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-buy {
+    border: none;
+    padding: 5px;
+    background-color: lime;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.description-container {
+    margin: 30px auto;
+}
+
+h3,
+p {
+    margin-bottom: 10px;
+}

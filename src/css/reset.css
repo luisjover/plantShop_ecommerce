@@ -1,3 +1,32 @@
+/* RESET */
+
+@font-face {
+  font-family: "Rubik-light";
+  font-style: normal;
+  font-weight: light, 700, bold;
+  src: url("../assets/fonts/rubik/Rubik-Light.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/rubik/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik-bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../assets/fonts/rubik/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-mono";
+  font-style: normal;
+  src: url("../assets/fonts/roboto/RobotoMono-VariableFont_wght.ttf") format("truetype");
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -5,7 +34,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  color: #202020;
 }
 
 /*
@@ -25,6 +53,9 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Rubik";
+  scroll-behavior: smooth;
+  background-color: whitesmoke;
 }
 
 
@@ -82,5 +113,12 @@ a:hover,
 a:active,
 a:visited {
   text-decoration: none;
-  color: #202020;
+  color: black;
+}
+
+/* INDEX STYLES */
+
+h1,
+h2 {
+  font-family: "Rubik-bold";
 }

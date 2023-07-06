@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form"
-import { getUsers } from "../../api/functions/apiFetch"
+import { getData } from "../../api/functions/apiFetch"
 import { useState } from "react"
 import { useUserContext } from "../../utils/hooks/UserProvider"
 import { useNavigate } from "react-router-dom"
 import { setLoggedUser } from "../../utils/functions/handleLocalStorage"
+import { User } from "../../types/types"
 import "./profile.css"
 
 export const LoginForm = () => {
@@ -27,7 +28,7 @@ export const LoginForm = () => {
 
     const onSubmit = async () => {
 
-        const allUsers = await getUsers();
+        const allUsers = await getData("users") as User[];
         const sucessfulloggedUser = allUsers.find((user) => {
             if (user.email === watch("email")) {
                 if (user.password === watch("password")) {

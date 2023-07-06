@@ -2,15 +2,18 @@ import { Link, Outlet } from "react-router-dom"
 import { useUserContext } from "../utils/hooks/UserProvider"
 import { guestUser } from "../assets/db/globalVariables"
 import { checkLoggedUser, setLoggedUser } from "../utils/functions/handleLocalStorage"
+import { getUserById } from "../api/functions/apiFetch"
 
 
 export const ProfilePage = () => {
 
-    const { userEmail, logOut } = useUserContext()
+    const { userEmail, logIn } = useUserContext()
 
-    const handleLogOut = () => {
+    const handleLogOut = async () => {
+        const guestUser = await getUserById("1")
+
         setLoggedUser(guestUser)
-        logOut()
+        logIn("")
     }
 
 

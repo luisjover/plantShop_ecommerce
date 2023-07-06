@@ -1,7 +1,14 @@
+import { PurchaseResume } from "../components/shopingCart/checkOut/PurchaseResume"
+import { PurchaseForm } from "../components/shopingCart/checkOut/purchaseForm/PurchaseForm"
 
 
 export const CheckoutPage = () => {
+
     return (
-        <div>CheckoutPage</div>
+        <>
+            <PurchaseResume />
+            <PurchaseForm />
+        </>
     )
+
 }

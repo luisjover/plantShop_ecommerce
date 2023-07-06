@@ -1,4 +1,7 @@
 .header {
     height: 10vh;
-    background-color: lightcoral;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid darkslategrey;
 }
