@@ -1,29 +1,39 @@
 import { useProductContext } from "../../../utils/hooks/ProductsProvider"
 import { useParams } from "react-router-dom"
-import { getData } from "../../../api/functions/apiFetch"
-import { Product } from "../../../types/types"
+import { getData, updateUserWishlist } from "../../../api/functions/apiFetch"
+import { Product, User } from "../../../types/types"
 import { addToCart } from "../../../utils/functions/manageCart"
 import { ItemCounter } from "../../counter/ItemCounter"
 import { useEffect, useReducer } from "react"
 import { counterReducer } from "../../../utils/functions/counterReducer"
-import "./productDetail.css"
 import { useCartContentContext } from "../../../utils/hooks/CartContentProvider"
 import { resetScroll } from "../../../utils/functions/resetScroll"
+import { MdFavorite } from "react-icons/md";
+import "./productDetail.css"
+import { useWishListContext } from "../../../utils/hooks/WishListProvider"
+import { checkLoggedUser } from "../../../utils/functions/handleLocalStorage"
+import { updateStorageList } from "../../../utils/functions/manageWishList"
 
 
 
 export const ProductDetail = () => {
 
+
+
     useEffect(() => {
+
         resetScroll()
 
 
-    })
+    },)
 
 
     //All PRODUCTS CONTEXT AND API CALL CONTROL
     const { products, updateProducts } = useProductContext()
     const { updateCartContent } = useCartContentContext()
+    //WISHLIST CONTEXT
+    const { wishList, updateWishList } = useWishListContext()
+
 
     if (products === null) {
 
@@ -34,6 +44,7 @@ export const ProductDetail = () => {
 
         getFetch()
     }
+
 
     //REDUCER COUNTER
     const initialValue = { counter: 0 };
@@ -61,12 +72,37 @@ export const ProductDetail = () => {
         dispatch({ type: "reset" })
     }
 
+    const handleWishList = (event: React.TouchEvent) => {
+
+        event.stopPropagation()
+        const currentUser = checkLoggedUser() as User
+
+        const newWishList = [...wishList]
+        const productIndex = wishList.findIndex((product) => product.id === selectedProduct.id)
+
+        if (productIndex === -1) {
+            newWishList.push(selectedProduct)
+
+
+        }
+        else {
+            newWishList.splice(productIndex, 1)
+
+
+        }
+        updateWishList(newWishList)
+        updateUserWishlist(currentUser.id.toString(), newWishList)
+        updateStorageList(newWishList)
+
+    }
+
 
     return (
         <section className="product-detail-container">
             <h2>{selectedProduct?.name}</h2>
             <figure className="img-container">
-                <img src={selectedProduct.image[1]} alt={`Image of a ${selectedProduct.name} plant`} />
+                <img className="img" src={selectedProduct.image[1]} alt={`Image of a ${selectedProduct.name} plant`} />
+                <MdFavorite onClick={handleWishList} className={`fav-icon-big ${wishList.includes(selectedProduct) ? "active-big-icon" : ""}`} />
             </figure>
             <h3>{`${selectedProduct?.price} €`}</h3>
 

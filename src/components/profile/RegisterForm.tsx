@@ -109,7 +109,7 @@ export const RegisterForm = () => {
             />
             {errors.repeatpassword && <p>{errors.repeatpassword.message}</p>}
 
-            <button type="submit">SIGN IN</button>
+            <button className="submit" type="submit">SIGN IN</button>
         </form>
     )
 }

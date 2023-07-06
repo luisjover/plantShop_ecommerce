@@ -10,7 +10,9 @@ export const HomePage = () => {
         <>
 
             <FilterProvider>
-                <Filter filters={productsFilterCategories} />
+                <Filter filters={productsFilterCategories}
+                    className="home-filter"
+                />
                 <AllProducts />
             </FilterProvider>
 

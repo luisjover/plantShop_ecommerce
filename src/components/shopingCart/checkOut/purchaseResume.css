@@ -1,0 +1,29 @@
+.resume-container {
+
+    background-color: #EFEFEF;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    padding: 10px 0;
+}
+
+.purchased-item-card {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.purchased-item-img {
+    height: 80px;
+}
+
+.purchased-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+}

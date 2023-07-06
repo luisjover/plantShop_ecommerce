@@ -29,7 +29,7 @@ export const Heading = (props: { toggleBurgerMenu: () => void }) => {
             </div>
 
             <div className="cart-btn" onClick={() => navigate("/shopingcart")}>
-                <figure>
+                <figure className="figure-btn">
                     <HiOutlineShoppingBag className="cart-icon" />
                 </figure>
                 {cartContent.length > 0 ? <span className="cart-btn-number">{cartContent?.length}</span> : null}

@@ -12,7 +12,9 @@ export const AccessPage = () => {
     return (
         <>
             <FilterProvider>
-                <Filter filters={accessFilterCategories} />
+                <Filter filters={accessFilterCategories}
+                    className="access-filter"
+                />
                 <Access />
             </FilterProvider>
         </>

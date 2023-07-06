@@ -70,7 +70,7 @@ export const LoginForm = () => {
                     }
                 })}
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <p className="error-p">{errors.email.message}</p>}
 
             <label className="form-label" htmlFor="password">PASSWORD</label>
             <input className="input" id="password" type="text"
@@ -84,7 +84,7 @@ export const LoginForm = () => {
 
                 })}
             />
-            {errors.password && <p>{errors.password.message}</p>}
+            {errors.password && <p className="error-p">{errors.password.message}</p>}
             {loginState !== "" && <p>{loginState}</p>}
 
             <button className="submit" type="submit">LOG IN</button>

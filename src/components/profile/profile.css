@@ -1,8 +1,59 @@
-.access-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    align-items: center;
 }
 
-.input-label {}
+.profile-title {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    margin: 20px 0;
 
-.input {}
+}
+
+.logout-btn {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.profile-navlink {
+    margin-bottom: 20px;
+}
+
+
+.access-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.input-label {
+    font-size: 14px;
+}
+
+.submit {
+    width: 100%;
+    border: none;
+    margin-top: 30px;
+    padding: 8px;
+    background-color: rgb(59, 208, 59);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.error-p {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+.error-p::before {
+    display: inline;
+    content: "⚠ ";
+}

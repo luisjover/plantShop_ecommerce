@@ -1,0 +1,30 @@
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.aboutus-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+
+}
+
+.aboutus-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.bold-subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}

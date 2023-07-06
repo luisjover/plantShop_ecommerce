@@ -5,18 +5,17 @@ import "./filter.css"
 
 
 
-export const Filter = (props: { filters: FilterCategories[] }) => {
+export const Filter = (props: { filters: FilterCategories[], className: string }) => {
 
 
 
     return (
-        <nav className='filter-container'>
+        <nav className={props.className}>
             {props.filters.map((category) => (
                 <FilterButton
                     name={category.name}
                     id={category.id}
                     key={category.id}
-                    // setCurrentFilter={setCurrentFilter}
                     filter={category.filter}
                 />
             ))}

@@ -1,4 +1,4 @@
-import { IconType } from "react-icons"
+
 
 export type User = {
     id: number,
@@ -6,7 +6,7 @@ export type User = {
     password?: string,
     email: string,
     cart: CartProduct[],
-    wishlist: CartProduct[]
+    wishlist: Product[]
 }
 
 export type Product = {

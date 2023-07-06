@@ -1,7 +1,10 @@
 .header {
+    position: sticky;
     height: 10vh;
     background-color: whitesmoke;
-    position: sticky;
     top: 0;
     border-bottom: 1px solid darkslategrey;
+    z-index: 1;
+
+
 }

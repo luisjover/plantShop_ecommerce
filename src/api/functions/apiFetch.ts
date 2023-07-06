@@ -45,8 +45,7 @@ export const getProductById = async (id: string) => {
 
 export const updateUserCart = async (userId: string, newCart: CartProduct[]) => {
 
-    console.log(userId)
-    console.log(newCart)
+
     const URL = `http://localhost:3000/users/${userId}`
     const response = await fetch(URL, {
         method: "PATCH",
@@ -55,6 +54,23 @@ export const updateUserCart = async (userId: string, newCart: CartProduct[]) => 
         },
         body: JSON.stringify({
             cart: newCart
+        }),
+
+    });
+
+    const data = await response.json()
+    return data
+}
+
+export const updateUserWishlist = async (userId: string, newList: Product[]) => {
+    const URL = `http://localhost:3000/users/${userId}`
+    const response = await fetch(URL, {
+        method: "PATCH",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            wishlist: newList
         }),
 
     });

@@ -12,7 +12,6 @@ export const AllProducts = () => {
     const { products, updateProducts } = useProductContext()
 
 
-
     if (products === null) {
 
         const getFetch = async () => {
@@ -22,12 +21,10 @@ export const AllProducts = () => {
         getFetch()
     }
 
-
-
     if (products === null) return
     const filteredProducts: Product[] = products?.filter((product: Product) => product.filters.includes(currentFilter))
 
-    console.log(products)
+
     return (
         <div className="product-card-container">
             {filteredProducts?.map(({ ...props }) => (
