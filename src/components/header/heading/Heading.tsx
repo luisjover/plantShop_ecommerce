@@ -24,7 +24,7 @@ export const Heading = (props: { toggleBurgerMenu: () => void }) => {
 
             <div onClick={() => navigate("/")}>
                 <figure>
-                    <img src="/src/assets/images/App/logo.webp" alt="Monstera Main Logo" className="main-logo" />
+                    <img src="https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750716/images/App/logoSmall_t0vvlk.webp" alt="Monstera Main Logo" className="main-logo" />
                 </figure>
             </div>
 
