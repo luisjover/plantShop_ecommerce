@@ -1,9 +1,10 @@
 import { CartProduct, Product, User } from "../../types/types";
+const URL = "https://plant-ecommerce-json-server.vercel.app/";
 
 export const getData = async (data: string): Promise<Product[] | User[]> => {
 
-    const URL = `http://localhost:3000/${data}`
-    const response = await fetch(URL);
+    const url = `${URL}${data}`
+    const response = await fetch(url);
     const fetchedData: Product[] | User[] = await response.json();
 
     return fetchedData;
@@ -11,8 +12,8 @@ export const getData = async (data: string): Promise<Product[] | User[]> => {
 
 
 export const getUserById = async (id: string) => {
-    const URL = `http://localhost:3000/users/${id}`
-    const response = await fetch(URL);
+    const url = `${URL}users/${id}`
+    const response = await fetch(url);
     const fetchedData: User = await response.json();
 
     return fetchedData;
@@ -21,8 +22,8 @@ export const getUserById = async (id: string) => {
 export const setNewUser = async (user: User) => {
 
 
-    const URL = "http://localhost:3000/users"
-    const response = await fetch(URL, {
+    const url = `${URL}users`
+    const response = await fetch(url, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
@@ -36,8 +37,8 @@ export const setNewUser = async (user: User) => {
 }
 
 export const getProductById = async (id: string) => {
-    const URL = `http://localhost:3000/products/${id}`
-    const response = await fetch(URL);
+    const url = `${URL}products/${id}`
+    const response = await fetch(url);
     const fetchedData: User[] = await response.json();
 
     return fetchedData;
@@ -46,8 +47,8 @@ export const getProductById = async (id: string) => {
 export const updateUserCart = async (userId: string, newCart: CartProduct[]) => {
 
 
-    const URL = `http://localhost:3000/users/${userId}`
-    const response = await fetch(URL, {
+    const url = `${URL}users/${userId}`
+    const response = await fetch(url, {
         method: "PATCH",
         headers: {
             'Content-Type': 'application/json',
@@ -63,8 +64,8 @@ export const updateUserCart = async (userId: string, newCart: CartProduct[]) => 
 }
 
 export const updateUserWishlist = async (userId: string, newList: Product[]) => {
-    const URL = `http://localhost:3000/users/${userId}`
-    const response = await fetch(URL, {
+    const url = `${URL}users/${userId}`
+    const response = await fetch(url, {
         method: "PATCH",
         headers: {
             'Content-Type': 'application/json',

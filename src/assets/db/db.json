@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Zamioculca",
       "price": 10,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/zamioculca.webp",
         "/src/assets/images/productsMedium/zamioculca.webp"
@@ -18,7 +18,7 @@
       "id": 2,
       "name": "Maranta Leuconera",
       "price": 20,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/marantaleuconera.webp",
         "/src/assets/images/productsMedium/marantaleuconera.webp"
@@ -33,7 +33,7 @@
       "id": 3,
       "name": "Monstera Deliciosa",
       "price": 16,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/monsteradeliciosa.webp",
         "/src/assets/images/productsMedium/monsteradeliciosa.webp"
@@ -47,7 +47,7 @@
       "id": 4,
       "name": "Philodendron Neon",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/philodendronneon.webp",
         "/src/assets/images/productsMedium/philodendronneon.webp"
@@ -61,7 +61,7 @@
       "id": 5,
       "name": "Monstera Variegata Thai Constellation",
       "price": 122,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/thaiconstellation.webp",
         "/src/assets/images/productsMedium/thaiconstellation.webp"
@@ -75,7 +75,7 @@
       "id": 6,
       "name": "Anthurium Pink Flamingo",
       "price": 18,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/anthuriumflamingo.webp",
         "/src/assets/images/productsMedium/anthuriumflamingo.webp"
@@ -89,7 +89,7 @@
       "id": 7,
       "name": "Philodendron Birkin",
       "price": 36,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/philodendronbirkin.webp",
         "/src/assets/images/productsMedium/philodendronbirkin.webp"
@@ -103,7 +103,7 @@
       "id": 8,
       "name": "Begonia Maculata",
       "price": 32,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/begoniamaculata.webp",
         "/src/assets/images/productsMedium/begoniamaculata.webp"
@@ -116,7 +116,7 @@
       "id": 9,
       "name": "Aloe Godzilla",
       "price": 12,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/aloegodzilla.webp",
         "/src/assets/images/productsMedium/aloegodzilla.webp"
@@ -129,7 +129,7 @@
       "id": 10,
       "name": "Syngonium Red Heart",
       "price": 10,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/syngoniumredheart.webp",
         "/src/assets/images/productsMedium/syngoniumredheart.webp"
@@ -142,7 +142,7 @@
       "id": 11,
       "name": "Syngonium Confetti",
       "price": 24,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/syngoniumconfetti.webp",
         "/src/assets/images/productsMedium/syngoniumconfetti.webp"
@@ -155,7 +155,7 @@
       "id": 12,
       "name": "Peperomia Hope",
       "price": 28,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/peperomiahope.webp",
         "/src/assets/images/productsMedium/peperomiahope.webp"
@@ -170,7 +170,7 @@
       "id": 13,
       "name": "Euphorbia Ingens Variegata",
       "price": 10,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/euphorbiaingensvariegata.webp",
         "/src/assets/images/productsMedium/euphorbiaingensvariegata.webp"
@@ -183,7 +183,7 @@
       "id": 14,
       "name": "Potus Limón",
       "price": 15,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/potuslimon.webp",
         "/src/assets/images/productsMedium/potuslimon.webp"
@@ -196,7 +196,7 @@
       "id": 15,
       "name": "Ficus Lyrata",
       "price": 31,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/ficuslyrata.webp",
         "/src/assets/images/productsMedium/ficuslyrata.webp"
@@ -209,7 +209,7 @@
       "id": 16,
       "name": "Pilea Planta del Dinero",
       "price": 28,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/pilea.webp",
         "/src/assets/images/productsMedium/pilea.webp"
@@ -224,7 +224,7 @@
       "id": 17,
       "name": "Ficus Ruby",
       "price": 27,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/ficusruby.webp",
         "/src/assets/images/productsMedium/ficusruby.webp"
@@ -238,7 +238,7 @@
       "id": 18,
       "name": "Calathea Makoyana",
       "price": 19,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/calatheamakoyana.webp",
         "/src/assets/images/productsMedium/calatheamakoyana.webp"
@@ -252,7 +252,7 @@
       "id": 19,
       "name": "Anthurium Clarinervium",
       "price": 21,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/clarinervium.webp",
         "/src/assets/images/productsMedium/clarinervium.webp"
@@ -265,7 +265,7 @@
       "id": 20,
       "name": "Calathea Triostar",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/calatheatriostar.webp",
         "/src/assets/images/productsMedium/calatheatriostar.webp"
@@ -280,7 +280,7 @@
       "id": 21,
       "name": "Hoya Carnosa Tricolor",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/hoyacarnosatricolor.webp",
         "/src/assets/images/productsMedium/hoyacarnosatricolor.webp"
@@ -294,7 +294,7 @@
       "id": 22,
       "name": "Calathea Orbifolia",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/calatheaorbifolia.webp",
         "/src/assets/images/productsMedium/calatheaorbifolia.webp"
@@ -308,7 +308,7 @@
       "id": 23,
       "name": "Scindapsus Pictus",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/scindapsuspictus.webp",
         "/src/assets/images/productsMedium/scindapsuspictus.webp"
@@ -322,7 +322,7 @@
       "id": 24,
       "name": "Pachira Aquatica - Arbol del Dinero",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/pachiraaquatica.webp",
         "/src/assets/images/productsMedium/pachiraaquatica.webp"
@@ -337,7 +337,7 @@
       "id": 25,
       "name": "Peperomia Angulata",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/peperomiaangulata.webp",
         "/src/assets/images/productsMedium/peperomiaangulata.webp"
@@ -352,7 +352,7 @@
       "id": 26,
       "name": "Philodendron Micans",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/philodendronmicans.webp",
         "/src/assets/images/productsMedium/philodendronmicans.webp"
@@ -366,7 +366,7 @@
       "id": 27,
       "name": "Pino Norfolk",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/pinonorfolk.webp",
         "/src/assets/images/productsMedium/pinonorfolk.webp"
@@ -380,7 +380,7 @@
       "id": 28,
       "name": "Monstera Adansonii",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/monsteraadansonii.webp",
         "/src/assets/images/productsMedium/monsteraadansonii.webp"
@@ -393,7 +393,7 @@
       "id": 29,
       "name": "Strelitzia Nicolai",
       "price": 14,
-      "stock": 50,
+      "stock": 50000,
       "image": [
         "/src/assets/images/productsSmall/strelitzianicolai.webp",
         "/src/assets/images/productsMedium/strelitzianicolai.webp"
@@ -415,7 +415,7 @@
           "id": 1,
           "name": "Zamioculca",
           "price": 10,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/zamioculca.webp",
             "/src/assets/images/productsMedium/zamioculca.webp"
@@ -429,7 +429,7 @@
           "id": 2,
           "name": "Maranta Leuconera",
           "price": 20,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/marantaleuconera.webp",
             "/src/assets/images/productsMedium/marantaleuconera.webp"
@@ -444,24 +444,10 @@
           "id": 3,
           "name": "Monstera Deliciosa",
           "price": 16,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/monsteradeliciosa.webp",
             "/src/assets/images/productsMedium/monsteradeliciosa.webp"
-          ],
-          "filters": [
-            "topsales",
-            "easycare"
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Philodendron Neon",
-          "price": 14,
-          "stock": 50,
-          "image": [
-            "/src/assets/images/productsSmall/philodendronneon.webp",
-            "/src/assets/images/productsMedium/philodendronneon.webp"
           ],
           "filters": [
             "topsales",
@@ -481,7 +467,7 @@
           "id": 2,
           "name": "Maranta Leuconera",
           "price": 20,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/marantaleuconera.webp",
             "/src/assets/images/productsMedium/marantaleuconera.webp"
@@ -496,7 +482,7 @@
           "id": 3,
           "name": "Monstera Deliciosa",
           "price": 16,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/monsteradeliciosa.webp",
             "/src/assets/images/productsMedium/monsteradeliciosa.webp"
@@ -510,7 +496,7 @@
           "id": 4,
           "name": "Philodendron Neon",
           "price": 14,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/philodendronneon.webp",
             "/src/assets/images/productsMedium/philodendronneon.webp"
@@ -524,7 +510,7 @@
           "id": 1,
           "name": "Zamioculca",
           "price": 10,
-          "stock": 50,
+          "stock": 50000,
           "image": [
             "/src/assets/images/productsSmall/zamioculca.webp",
             "/src/assets/images/productsMedium/zamioculca.webp"
