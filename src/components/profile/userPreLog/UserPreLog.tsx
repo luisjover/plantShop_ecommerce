@@ -1,9 +1,8 @@
 
 
-import { useEffect } from 'react'
-import { checkLoggedUser, setLoggedUser } from '../../../utils/functions/handleLocalStorage'
-import { User } from '../../../types/types'
-import { getUserById } from '../../../api/functions/apiFetch'
+import { useEffect } from 'react';
+import { checkLoggedUser, setLoggedUser } from '../../../utils/functions/handleLocalStorage';
+import { getUserById } from '../../../api/functions/apiFetch';
 
 export const UserPreLog = ({ logIn, logOut }: { logIn: (email: string) => void, logOut: () => void }) => {
     useEffect(() => {

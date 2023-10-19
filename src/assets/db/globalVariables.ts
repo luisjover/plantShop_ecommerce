@@ -1,5 +1,5 @@
 
-import { FilterCategories, ProductFilters, AccessFilters, User } from "../../types/types"
+import { FilterCategories, ProductFilters, AccessFilters } from "../../types/types";
 
 
 export const productsFilterCategories: FilterCategories[] = [
