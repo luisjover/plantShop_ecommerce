@@ -6,8 +6,8 @@
       "price": 10,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/zamioculca.webp",
-        "/src/assets/images/productsMedium/zamioculca.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750731/images/productsSmall/zamioculca_q2iyah.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750726/images/productsMedium/zamioculca_ejnnvq.webp"
       ],
       "filters": [
         "topsales",
@@ -20,8 +20,8 @@
       "price": 20,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/marantaleuconera.webp",
-        "/src/assets/images/productsMedium/marantaleuconera.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750728/images/productsSmall/marantaleuconera_rjszhz.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750723/images/productsMedium/marantaleuconera_u6yrxp.webp"
       ],
       "filters": [
         "topsales",
@@ -35,8 +35,8 @@
       "price": 16,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/monsteradeliciosa.webp",
-        "/src/assets/images/productsMedium/monsteradeliciosa.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750728/images/productsSmall/monsteradeliciosa_zk9cmh.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750723/images/productsMedium/monsteradeliciosa_ix281v.webp"
       ],
       "filters": [
         "topsales",
@@ -49,8 +49,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/philodendronneon.webp",
-        "/src/assets/images/productsMedium/philodendronneon.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750729/images/productsSmall/philodendronneon_xtcdpz.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750724/images/productsMedium/philodendronneon_kfpu0d.webp"
       ],
       "filters": [
         "topsales",
@@ -63,8 +63,8 @@
       "price": 122,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/thaiconstellation.webp",
-        "/src/assets/images/productsMedium/thaiconstellation.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750730/images/productsSmall/thaiconstellation_apyxng.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750725/images/productsMedium/thaiconstellation_orgl8b.webp"
       ],
       "filters": [
         "topsales",
@@ -77,8 +77,8 @@
       "price": 18,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/anthuriumflamingo.webp",
-        "/src/assets/images/productsMedium/anthuriumflamingo.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750726/images/productsSmall/anthuriumflamingo_iwnhrw.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750721/images/productsMedium/anthuriumflamingo_zxizht.webp"
       ],
       "filters": [
         "topsales",
@@ -91,8 +91,8 @@
       "price": 36,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/philodendronbirkin.webp",
-        "/src/assets/images/productsMedium/philodendronbirkin.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750729/images/productsSmall/philodendronbirkin_gyrxf7.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750724/images/productsMedium/philodendronbirkin_x3lwgf.webp"
       ],
       "filters": [
         "topsales",
@@ -105,8 +105,8 @@
       "price": 32,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/begoniamaculata.webp",
-        "/src/assets/images/productsMedium/begoniamaculata.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750726/images/productsSmall/begoniamaculata_x1zamr.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750721/images/productsMedium/begoniamaculata_qzy0hu.webp"
       ],
       "filters": [
         "topsales"
@@ -118,8 +118,8 @@
       "price": 12,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/aloegodzilla.webp",
-        "/src/assets/images/productsMedium/aloegodzilla.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750726/images/productsSmall/aloegodzilla_ibz8f2.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750721/images/productsMedium/aloegodzilla_oyruiv.webp"
       ],
       "filters": [
         "easycare"
@@ -131,8 +131,8 @@
       "price": 10,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/syngoniumredheart.webp",
-        "/src/assets/images/productsMedium/syngoniumredheart.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750730/images/productsSmall/syngoniumredheart_uf9fcs.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750725/images/productsMedium/syngoniumredheart_clekhf.webp"
       ],
       "filters": [
         "easycare"
@@ -144,8 +144,8 @@
       "price": 24,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/syngoniumconfetti.webp",
-        "/src/assets/images/productsMedium/syngoniumconfetti.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750730/images/productsSmall/syngoniumconfetti_oecd2h.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750725/images/productsMedium/syngoniumconfetti_ce5vzl.webp"
       ],
       "filters": [
         "easycare"
@@ -157,8 +157,8 @@
       "price": 28,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/peperomiahope.webp",
-        "/src/assets/images/productsMedium/peperomiahope.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750729/images/productsSmall/peperomiahope_rz1bsv.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750724/images/productsMedium/peperomiahope_wcx1ip.webp"
       ],
       "filters": [
         "topsales",
@@ -172,8 +172,8 @@
       "price": 10,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/euphorbiaingensvariegata.webp",
-        "/src/assets/images/productsMedium/euphorbiaingensvariegata.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750727/images/productsSmall/euphorbiaingensvariegata_ys1nzr.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750722/images/productsMedium/euphorbiaingensvariegata_qfyvds.webp"
       ],
       "filters": [
         "easycare"
@@ -185,8 +185,8 @@
       "price": 15,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/potuslimon.webp",
-        "/src/assets/images/productsMedium/potuslimon.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750730/images/productsSmall/potuslimon_lokcnl.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750725/images/productsMedium/potuslimon_pycwsa.webp"
       ],
       "filters": [
         "easycare"
@@ -198,8 +198,8 @@
       "price": 31,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/ficuslyrata.webp",
-        "/src/assets/images/productsMedium/ficuslyrata.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750727/images/productsSmall/ficuslyrata_cxxaac.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750722/images/productsMedium/ficuslyrata_sntqjm.webp"
       ],
       "filters": [
         "easycare"
@@ -211,8 +211,8 @@
       "price": 28,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/pilea.webp",
-        "/src/assets/images/productsMedium/pilea.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750729/images/productsSmall/pilea_ilh2bw.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750724/images/productsMedium/pilea_vgpmwh.webp"
       ],
       "filters": [
         "topsales",
@@ -226,8 +226,8 @@
       "price": 27,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/ficusruby.webp",
-        "/src/assets/images/productsMedium/ficusruby.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750727/images/productsSmall/ficusruby_jyxfwb.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750722/images/productsMedium/ficusruby_neddva.webp"
       ],
       "filters": [
         "topsales",
@@ -240,8 +240,8 @@
       "price": 19,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/calatheamakoyana.webp",
-        "/src/assets/images/productsMedium/calatheamakoyana.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750726/images/productsSmall/calatheamakoyana_kqqjsi.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750721/images/productsMedium/calatheamakoyana_tw7ghf.webp"
       ],
       "filters": [
         "petfriendly",
@@ -254,8 +254,8 @@
       "price": 21,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/clarinervium.webp",
-        "/src/assets/images/productsMedium/clarinervium.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750727/images/productsSmall/clarinervium_mxda0z.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750722/images/productsMedium/clarinervium_u2bxmp.webp"
       ],
       "filters": [
         "easycare"
@@ -267,8 +267,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/calatheatriostar.webp",
-        "/src/assets/images/productsMedium/calatheatriostar.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750727/images/productsSmall/calatheatriostar_g8y8si.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750722/images/productsMedium/calatheatriostar_ejjnul.webp"
       ],
       "filters": [
         "topsales",
@@ -282,8 +282,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/hoyacarnosatricolor.webp",
-        "/src/assets/images/productsMedium/hoyacarnosatricolor.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750728/images/productsSmall/hoyacarnosatricolor_sqzose.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750723/images/productsMedium/hoyacarnosatricolor_bkevuh.webp"
       ],
       "filters": [
         "petfriendly",
@@ -296,8 +296,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/calatheaorbifolia.webp",
-        "/src/assets/images/productsMedium/calatheaorbifolia.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750727/images/productsSmall/calatheaorbifolia_nypudf.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750722/images/productsMedium/calatheaorbifolia_ty7f7y.webp"
       ],
       "filters": [
         "petfriendly",
@@ -310,8 +310,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/scindapsuspictus.webp",
-        "/src/assets/images/productsMedium/scindapsuspictus.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750730/images/productsSmall/scindapsuspictus_kxjiqq.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750725/images/productsMedium/scindapsuspictus_psqj46.webp"
       ],
       "filters": [
         "topsales",
@@ -324,8 +324,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/pachiraaquatica.webp",
-        "/src/assets/images/productsMedium/pachiraaquatica.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750728/images/productsSmall/pachiraaquatica_nwdeyq.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750723/images/productsMedium/pachiraaquatica_mbjvp3.webp"
       ],
       "filters": [
         "topsales",
@@ -339,8 +339,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/peperomiaangulata.webp",
-        "/src/assets/images/productsMedium/peperomiaangulata.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750728/images/productsSmall/peperomiaangulata_czdjus.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750723/images/productsMedium/peperomiaangulata_nlsauu.webp"
       ],
       "filters": [
         "topsales",
@@ -354,8 +354,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/philodendronmicans.webp",
-        "/src/assets/images/productsMedium/philodendronmicans.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750729/images/productsSmall/philodendronmicans_p3lsjy.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750724/images/productsMedium/philodendronsmicans_l7d5da.webp"
       ],
       "filters": [
         "topsales",
@@ -368,8 +368,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/pinonorfolk.webp",
-        "/src/assets/images/productsMedium/pinonorfolk.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750729/images/productsSmall/pinonorfolk_oljjjv.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750724/images/productsMedium/pinonorfolk_dg0i3o.webp"
       ],
       "filters": [
         "topsales",
@@ -382,8 +382,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/monsteraadansonii.webp",
-        "/src/assets/images/productsMedium/monsteraadansonii.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750728/images/productsSmall/monsteraadansonii_u94soe.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750723/images/productsMedium/monsteraadansonii_r3c4y7.webp"
       ],
       "filters": [
         "easycare"
@@ -395,8 +395,8 @@
       "price": 14,
       "stock": 50000,
       "image": [
-        "/src/assets/images/productsSmall/strelitzianicolai.webp",
-        "/src/assets/images/productsMedium/strelitzianicolai.webp"
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750730/images/productsSmall/strelitzianicolai_r6bfdl.webp",
+        "https://res.cloudinary.com/dpx5mfvue/image/upload/v1697750725/images/productsMedium/strelitzianicolai_hqj3rh.webp"
       ],
       "filters": [
         "easycare"
@@ -410,51 +410,7 @@
       "password": "",
       "email": "",
       "cart": [],
-      "wishlist": [
-        {
-          "id": 1,
-          "name": "Zamioculca",
-          "price": 10,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/zamioculca.webp",
-            "/src/assets/images/productsMedium/zamioculca.webp"
-          ],
-          "filters": [
-            "topsales",
-            "easycare"
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Maranta Leuconera",
-          "price": 20,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/marantaleuconera.webp",
-            "/src/assets/images/productsMedium/marantaleuconera.webp"
-          ],
-          "filters": [
-            "topsales",
-            "petfriendly",
-            "easycare"
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Monstera Deliciosa",
-          "price": 16,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/monsteradeliciosa.webp",
-            "/src/assets/images/productsMedium/monsteradeliciosa.webp"
-          ],
-          "filters": [
-            "topsales",
-            "easycare"
-          ]
-        }
-      ]
+      "wishlist": []
     },
     {
       "id": 2,
@@ -462,65 +418,7 @@
       "password": "AliAli1+",
       "email": "Kyao_69@hotmail.com",
       "cart": [],
-      "wishlist": [
-        {
-          "id": 2,
-          "name": "Maranta Leuconera",
-          "price": 20,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/marantaleuconera.webp",
-            "/src/assets/images/productsMedium/marantaleuconera.webp"
-          ],
-          "filters": [
-            "topsales",
-            "petfriendly",
-            "easycare"
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Monstera Deliciosa",
-          "price": 16,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/monsteradeliciosa.webp",
-            "/src/assets/images/productsMedium/monsteradeliciosa.webp"
-          ],
-          "filters": [
-            "topsales",
-            "easycare"
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Philodendron Neon",
-          "price": 14,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/philodendronneon.webp",
-            "/src/assets/images/productsMedium/philodendronneon.webp"
-          ],
-          "filters": [
-            "topsales",
-            "easycare"
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Zamioculca",
-          "price": 10,
-          "stock": 50000,
-          "image": [
-            "/src/assets/images/productsSmall/zamioculca.webp",
-            "/src/assets/images/productsMedium/zamioculca.webp"
-          ],
-          "filters": [
-            "topsales",
-            "easycare"
-          ]
-        }
-      ]
+      "wishlist": []
     }
   ]
 }
