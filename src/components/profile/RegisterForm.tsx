@@ -45,7 +45,7 @@ export const RegisterForm = () => {
 
         await setNewUser(newUser);
         reset();
-        navigate("/access");
+        navigate("/profile/access");
     }
 
 
