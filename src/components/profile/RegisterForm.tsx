@@ -1,14 +1,16 @@
 
-import { getData } from "../../api/functions/apiFetch"
-import { useForm } from "react-hook-form"
-import { User } from "../../types/types"
-import { useState } from "react"
-import { setNewUser } from "../../api/functions/apiFetch"
-import "./profile.css"
+import { getData } from "../../api/functions/apiFetch";
+import { useForm } from "react-hook-form";
+import { User } from "../../types/types";
+import { useState } from "react";
+import { setNewUser } from "../../api/functions/apiFetch";
+import "./profile.css";
+import { useNavigate } from "react-router-dom";
 
 export const RegisterForm = () => {
 
-    const [alreadyExisting, setAlreadyExisting] = useState<boolean>(false)
+    const [alreadyExisting, setAlreadyExisting] = useState<boolean>(false);
+    const navigate = useNavigate();
 
     const { register, handleSubmit, formState: { errors }, reset, watch } = useForm(
         {
@@ -19,18 +21,18 @@ export const RegisterForm = () => {
                 repeatpassword: ""
             }
         }
-    )
+    );
 
     const onSubmit = async () => {
-        setAlreadyExisting(false)
+        setAlreadyExisting(false);
         const users = await getData("users") as User[];
-        console.log(users)
+
         if (users.find((user) => (user.email === watch("email")))) {
             setAlreadyExisting(true)
             return
-        }
+        };
 
-        const newId = users.length + 1
+        const newId = users.length + 1;
 
         const newUser: User = {
             id: newId,
@@ -39,11 +41,11 @@ export const RegisterForm = () => {
             email: watch("email"),
             cart: [],
             wishlist: []
-        }
+        };
 
-        await setNewUser(newUser)
-        reset()
-
+        await setNewUser(newUser);
+        reset();
+        navigate("/access");
     }
 
 
