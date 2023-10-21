@@ -5,14 +5,12 @@ import { AccessFilters, User } from "../../types/types";
 import { useState } from "react";
 import { setNewUser } from "../../api/functions/apiFetch";
 import "./profile.css";
-import { useNavigate } from "react-router-dom";
 import { useFilterContext } from "../../utils/hooks/FilterProvider";
 
 export const RegisterForm = () => {
 
     const [alreadyExisting, setAlreadyExisting] = useState<boolean>(false);
-    const { changeFilter } = useFilterContext()
-    const navigate = useNavigate();
+    const { changeFilter } = useFilterContext();
 
     const { register, handleSubmit, formState: { errors }, reset, watch } = useForm(
         {
