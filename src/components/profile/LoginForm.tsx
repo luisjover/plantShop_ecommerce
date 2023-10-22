@@ -29,7 +29,7 @@ export const LoginForm = () => {
     const onSubmit = async () => {
 
         const allUsers = await getData("users") as User[];
-        const sucessfulloggedUser = allUsers.find((user) => {
+        const sucessfulLoggedUser = allUsers.find((user) => {
             if (user.email === watch("email")) {
                 if (user.password === watch("password")) {
                     message = ""
@@ -46,9 +46,9 @@ export const LoginForm = () => {
 
         setLoginState(message);
 
-        if (sucessfulloggedUser) {
+        if (sucessfulLoggedUser) {
             logIn(watch("email"))
-            setLoggedUser(sucessfulloggedUser)
+            setLoggedUser(sucessfulLoggedUser)
             navigate("/", { replace: true })
             reset();
         }
