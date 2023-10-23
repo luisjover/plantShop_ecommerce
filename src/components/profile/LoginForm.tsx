@@ -52,11 +52,11 @@ export const LoginForm = () => {
             logIn(watch("email"))
             setLoggedUser(sucessfulLoggedUser)
             reset();
-            setTimeout(() => { }, 5000);
-            navigate("/", { replace: true })
+            setTimeout(() => {
+                navigate("/", { replace: true })
+            }, 1200);
+
         }
-
-
 
     }
 
