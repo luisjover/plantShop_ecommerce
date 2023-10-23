@@ -54,7 +54,7 @@ export const LoginForm = () => {
             reset();
             setTimeout(() => {
                 navigate("/", { replace: true })
-            }, 5200);
+            }, 1200);
 
         }
 
