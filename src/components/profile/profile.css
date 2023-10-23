@@ -1,8 +1,11 @@
 .profile-page {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
     align-items: center;
+    min-width: 390px;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .profile-title {
@@ -15,7 +18,9 @@
 
 .logout-btn {
     width: 80%;
+    max-width: 310px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .profile-navlink {
@@ -43,6 +48,7 @@
     margin-top: 30px;
     padding: 8px;
     background-color: rgb(59, 208, 59);
+    cursor: pointer;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;

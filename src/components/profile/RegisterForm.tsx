@@ -1,10 +1,10 @@
 
+import "./profile.css";
 import { getData } from "../../api/functions/apiFetch";
 import { useForm } from "react-hook-form";
 import { User } from "../../types/types";
 import { useState } from "react";
 import { setNewUser } from "../../api/functions/apiFetch";
-import "./profile.css";
 import { setLoggedUser } from "../../utils/functions/handleLocalStorage";
 import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../../utils/hooks/UserProvider";
@@ -68,7 +68,7 @@ export const RegisterForm = () => {
             />
             <form className="access-form" onSubmit={handleSubmit(onSubmit)}>
 
-                <label className="input-label" htmlFor="email">EMAIL</label>
+                <label className="form-label" htmlFor="email">EMAIL</label>
                 <input className="input" id="email"
                     {...register("email", {
                         required: true,
@@ -78,10 +78,10 @@ export const RegisterForm = () => {
                         }
                     })}
                 />
-                {errors.email && <p>{errors.email.message}</p>}
-                {alreadyExisting && <p>User Already Existing</p>}
+                {errors.email && <p className="error-p">{errors.email.message}</p>}
+                {alreadyExisting && <p className="error-p">User Already Existing</p>}
 
-                <label className="input-label" htmlFor="usernamename">NAME</label>
+                <label className="form-label" htmlFor="usernamename">NAME</label>
                 <input className="input" id="usernamename"
                     {...register("username", {
                         required: true,
@@ -95,9 +95,9 @@ export const RegisterForm = () => {
                         }
                     })}
                 />
-                {errors.username && <p>{errors.username.message}</p>}
+                {errors.username && <p className="error-p">{errors.username.message}</p>}
 
-                <label className="input-label" htmlFor="password">PASSWORD</label>
+                <label className="form-label" htmlFor="password">PASSWORD</label>
                 <input className="input" id="password"
 
                     {...register("password", {
@@ -109,9 +109,9 @@ export const RegisterForm = () => {
 
                     })}
                 />
-                {errors.password && <p>{errors.password.message}</p>}
+                {errors.password && <p className="error-p">{errors.password.message}</p>}
 
-                <label className="input-label" htmlFor="repeatpassword">REPEAT PASSWORD</label>
+                <label className="form-label" htmlFor="repeatpassword">REPEAT PASSWORD</label>
                 <input className="input" id="repeatpassword"
 
                     {...register("repeatpassword", {
@@ -125,7 +125,7 @@ export const RegisterForm = () => {
 
                     })}
                 />
-                {errors.repeatpassword && <p>{errors.repeatpassword.message}</p>}
+                {errors.repeatpassword && <p className="error-p">{errors.repeatpassword.message}</p>}
 
                 <button className="submit" type="submit">SIGN IN</button>
             </form>
