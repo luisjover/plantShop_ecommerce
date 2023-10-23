@@ -23,11 +23,13 @@
 .cart-icon {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .main-logo {
     width: 156px;
     height: 20px;
+    cursor: pointer;
 }
 
 .cart-btn {

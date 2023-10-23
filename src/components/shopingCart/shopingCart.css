@@ -1,5 +1,7 @@
 .shopping-cart-container {
     background-color: #EFEFEF;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .subtotal-container {
@@ -82,7 +84,7 @@
 
 
 .total-btn {
-    width: 100%;
+    width: 200px;
     margin: 20px auto;
 }
 
