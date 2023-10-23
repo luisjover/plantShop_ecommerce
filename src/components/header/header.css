@@ -5,6 +5,8 @@
     top: 0;
     border-bottom: 1px solid darkslategrey;
     z-index: 1;
+    min-width: 390px;
+    padding: 0 20px;
 
 
 }
