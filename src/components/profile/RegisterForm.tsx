@@ -1,16 +1,19 @@
 
 import { getData } from "../../api/functions/apiFetch";
 import { useForm } from "react-hook-form";
-import { AccessFilters, User } from "../../types/types";
+import { User } from "../../types/types";
 import { useState } from "react";
 import { setNewUser } from "../../api/functions/apiFetch";
 import "./profile.css";
-import { useFilterContext } from "../../utils/hooks/FilterProvider";
+import { setLoggedUser } from "../../utils/functions/handleLocalStorage";
+import { useNavigate } from "react-router-dom";
+import { useUserContext } from "../../utils/hooks/UserProvider";
 
 export const RegisterForm = () => {
 
+    const { logIn } = useUserContext();
     const [alreadyExisting, setAlreadyExisting] = useState<boolean>(false);
-    const { changeFilter } = useFilterContext();
+    const navigate = useNavigate();
 
     const { register, handleSubmit, formState: { errors }, reset, watch } = useForm(
         {
@@ -44,8 +47,11 @@ export const RegisterForm = () => {
         };
 
         await setNewUser(newUser);
+
+        logIn(watch("email"))
+        setLoggedUser(newUser)
+        navigate("/", { replace: true })
         reset();
-        changeFilter(AccessFilters.LOGIN)
     }
 
 

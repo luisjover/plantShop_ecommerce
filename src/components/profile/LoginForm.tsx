@@ -1,17 +1,17 @@
-import { useForm } from "react-hook-form"
-import { getData } from "../../api/functions/apiFetch"
-import { useState } from "react"
-import { useUserContext } from "../../utils/hooks/UserProvider"
-import { useNavigate } from "react-router-dom"
-import { setLoggedUser } from "../../utils/functions/handleLocalStorage"
-import { User } from "../../types/types"
-import "./profile.css"
+import { useForm } from "react-hook-form";
+import { getData } from "../../api/functions/apiFetch";
+import { useState } from "react";
+import { useUserContext } from "../../utils/hooks/UserProvider";
+import { useNavigate } from "react-router-dom";
+import { setLoggedUser } from "../../utils/functions/handleLocalStorage";
+import { User } from "../../types/types";
+import "./profile.css";
 
 export const LoginForm = () => {
 
-    const { logIn } = useUserContext()
+    const { logIn } = useUserContext();
 
-    const [loginState, setLoginState] = useState("")
+    const [loginState, setLoginState] = useState("");
 
     const { register, handleSubmit, formState: { errors }, reset, watch } = useForm(
         {
@@ -22,7 +22,7 @@ export const LoginForm = () => {
         }
     )
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     let message = "";
 
