@@ -8,6 +8,7 @@ import "./profile.css";
 import { setLoggedUser } from "../../utils/functions/handleLocalStorage";
 import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../../utils/hooks/UserProvider";
+import toast, { Toaster } from 'react-hot-toast';
 
 export const RegisterForm = () => {
 
@@ -47,77 +48,87 @@ export const RegisterForm = () => {
         };
 
         await setNewUser(newUser);
-
+        toast.success(`${newUser.name} User registered! Loging..`)
         logIn(watch("email"))
         setLoggedUser(newUser)
-        navigate("/", { replace: true })
         reset();
+        setTimeout(() => {
+            navigate("/", { replace: true })
+        }, 1200);
     }
 
 
     return (
-        <form className="access-form" onSubmit={handleSubmit(onSubmit)}>
-
-            <label className="input-label" htmlFor="email">EMAIL</label>
-            <input className="input" id="email"
-                {...register("email", {
-                    required: true,
-                    pattern: {
-                        value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i,
-                        message: "Not a valid e-mail"
-                    }
-                })}
+        <>
+            <Toaster
+                position="top-center"
+                toastOptions={{
+                    duration: 1000,
+                }}
             />
-            {errors.email && <p>{errors.email.message}</p>}
-            {alreadyExisting && <p>User Already Existing</p>}
+            <form className="access-form" onSubmit={handleSubmit(onSubmit)}>
 
-            <label className="input-label" htmlFor="usernamename">NAME</label>
-            <input className="input" id="usernamename"
-                {...register("username", {
-                    required: true,
-                    minLength: {
-                        value: 4,
-                        message: "Minimum length is 4"
-                    },
-                    maxLength: {
-                        value: 12,
-                        message: "Max length is 12"
-                    }
-                })}
-            />
-            {errors.username && <p>{errors.username.message}</p>}
-
-            <label className="input-label" htmlFor="password">PASSWORD</label>
-            <input className="input" id="password"
-
-                {...register("password", {
-                    required: true,
-                    pattern: {
-                        value: /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/i,
-                        message: "The password must have between 8 and 16 characters, at least one digit, one lowercase, one uppercase and at least one non-alphanumeric character."
-                    },
-
-                })}
-            />
-            {errors.password && <p>{errors.password.message}</p>}
-
-            <label className="input-label" htmlFor="repeatpassword">REPEAT PASSWORD</label>
-            <input className="input" id="repeatpassword"
-
-                {...register("repeatpassword", {
-                    required: true,
-                    validate: (value: string) => {
-                        if (watch("password") !== value) {
-                            return "Passwords do not match"
+                <label className="input-label" htmlFor="email">EMAIL</label>
+                <input className="input" id="email"
+                    {...register("email", {
+                        required: true,
+                        pattern: {
+                            value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i,
+                            message: "Not a valid e-mail"
                         }
-                        return true
-                    },
+                    })}
+                />
+                {errors.email && <p>{errors.email.message}</p>}
+                {alreadyExisting && <p>User Already Existing</p>}
 
-                })}
-            />
-            {errors.repeatpassword && <p>{errors.repeatpassword.message}</p>}
+                <label className="input-label" htmlFor="usernamename">NAME</label>
+                <input className="input" id="usernamename"
+                    {...register("username", {
+                        required: true,
+                        minLength: {
+                            value: 4,
+                            message: "Minimum length is 4"
+                        },
+                        maxLength: {
+                            value: 12,
+                            message: "Max length is 12"
+                        }
+                    })}
+                />
+                {errors.username && <p>{errors.username.message}</p>}
 
-            <button className="submit" type="submit">SIGN IN</button>
-        </form>
+                <label className="input-label" htmlFor="password">PASSWORD</label>
+                <input className="input" id="password"
+
+                    {...register("password", {
+                        required: true,
+                        pattern: {
+                            value: /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/i,
+                            message: "The password must have between 8 and 16 characters, at least one digit, one lowercase, one uppercase and at least one non-alphanumeric character."
+                        },
+
+                    })}
+                />
+                {errors.password && <p>{errors.password.message}</p>}
+
+                <label className="input-label" htmlFor="repeatpassword">REPEAT PASSWORD</label>
+                <input className="input" id="repeatpassword"
+
+                    {...register("repeatpassword", {
+                        required: true,
+                        validate: (value: string) => {
+                            if (watch("password") !== value) {
+                                return "Passwords do not match"
+                            }
+                            return true
+                        },
+
+                    })}
+                />
+                {errors.repeatpassword && <p>{errors.repeatpassword.message}</p>}
+
+                <button className="submit" type="submit">SIGN IN</button>
+            </form>
+        </>
     )
 }
