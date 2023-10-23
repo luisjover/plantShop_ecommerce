@@ -2,10 +2,7 @@
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import "./itemCounter.css"
 
-
 export const ItemCounter = ({ ...props }) => {
-
-
 
 
     return (

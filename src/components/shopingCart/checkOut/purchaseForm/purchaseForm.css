@@ -2,6 +2,9 @@
     background-color: #EFEFEF;
     margin-top: 20px;
     padding-top: 10px;
+    min-width: 390px;
+    max-width: 900px;
+    margin: 20px auto 0;
 
 }
 
@@ -45,12 +48,13 @@
 }
 
 .form-btn {
-    width: 100%;
+    width: 350px;
     margin-bottom: 30px;
     border: none;
     margin-top: 20px;
     padding: 10px;
     background-color: rgb(59, 208, 59);
+    cursor: pointer;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;

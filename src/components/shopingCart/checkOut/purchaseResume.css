@@ -1,6 +1,8 @@
 .resume-container {
-
     background-color: #EFEFEF;
+    min-width: 390px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .title {

@@ -6,3 +6,11 @@
     border: 1px solid greenyellow;
     padding: 5px;
 }
+
+.btn-counter-icon {
+    cursor: pointer;
+}
+
+.counter-display {
+    cursor: default;
+}

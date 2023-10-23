@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    min-width: 390px;
+    max-width: 900px;
     height: 300px;
+    padding-top: 50px;
+    margin: 0 auto;
 }

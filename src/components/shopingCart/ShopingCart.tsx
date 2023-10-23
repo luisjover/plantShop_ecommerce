@@ -97,10 +97,10 @@ export const ShopingCart = () => {
                             <span>{cartProduct.name}</span>
                             {/* <span> x {cartProduct.quantity} units</span> */}
                             <div className="card-counter">
-                                <RiDeleteBin5Line onClick={() => deleteItem(cartProduct.id)} />
-                                <AiOutlineMinus onClick={() => decrementItem(cartProduct.id)} />
-                                <span>{cartProduct.quantity}</span>
-                                <AiOutlinePlus onClick={() => incrementItem(cartProduct.id)} />
+                                <RiDeleteBin5Line onClick={() => deleteItem(cartProduct.id)} className="card-button" />
+                                <AiOutlineMinus onClick={() => decrementItem(cartProduct.id)} className="card-button" />
+                                <span className="card-item-quantity">{cartProduct.quantity}</span>
+                                <AiOutlinePlus onClick={() => incrementItem(cartProduct.id)} className="card-button" />
                             </div>
                         </div>
                     </div>
