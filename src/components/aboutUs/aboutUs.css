@@ -1,8 +1,10 @@
 .aboutus-container {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-
+    padding: 20px;
+    min-width: 390px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .aboutus-title {
