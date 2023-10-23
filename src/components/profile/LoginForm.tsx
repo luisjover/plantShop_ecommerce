@@ -52,7 +52,7 @@ export const LoginForm = () => {
             logIn(watch("email"))
             setLoggedUser(sucessfulLoggedUser)
             reset();
-            setTimeout(() => { }, 1000);
+            setTimeout(() => { }, 5000);
             navigate("/", { replace: true })
         }
 
