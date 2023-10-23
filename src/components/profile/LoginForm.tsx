@@ -34,7 +34,6 @@ export const LoginForm = () => {
             if (user.email === watch("email")) {
                 if (user.password === watch("password")) {
                     message = "";
-                    toast.success(`${user.name} logged in successfully!!`)
                     return true;
                 } else {
                     message = "wrong password"
@@ -49,10 +48,12 @@ export const LoginForm = () => {
         setLoginState(message);
 
         if (sucessfulLoggedUser) {
+            toast.success(`${sucessfulLoggedUser.name} logged in successfully!!`)
             logIn(watch("email"))
             setLoggedUser(sucessfulLoggedUser)
-            navigate("/", { replace: true })
             reset();
+            setTimeout(() => { }, 1000);
+            navigate("/", { replace: true })
         }
 
 
