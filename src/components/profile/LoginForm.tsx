@@ -5,6 +5,7 @@ import { useUserContext } from "../../utils/hooks/UserProvider";
 import { useNavigate } from "react-router-dom";
 import { setLoggedUser } from "../../utils/functions/handleLocalStorage";
 import { User } from "../../types/types";
+import toast, { Toaster } from 'react-hot-toast';
 import "./profile.css";
 
 export const LoginForm = () => {
@@ -32,7 +33,8 @@ export const LoginForm = () => {
         const sucessfulLoggedUser = allUsers.find((user) => {
             if (user.email === watch("email")) {
                 if (user.password === watch("password")) {
-                    message = ""
+                    message = "";
+                    toast.success(`${user.name} logged in successfully!!`)
                     return true;
                 } else {
                     message = "wrong password"
@@ -59,35 +61,43 @@ export const LoginForm = () => {
 
 
     return (
-        <form className="access-form" onSubmit={handleSubmit(onSubmit)}>
-            <label className="form-label" htmlFor="email">EMAIL</label>
-            <input className="input" id="email" type="email"
-                {...register("email", {
-                    required: true,
-                    pattern: {
-                        value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i,
-                        message: "Not a valid e-mail"
-                    }
-                })}
+        <>
+            <Toaster
+                position="top-center"
+                toastOptions={{
+                    duration: 1000,
+                }}
             />
-            {errors.email && <p className="error-p">{errors.email.message}</p>}
+            <form className="access-form" onSubmit={handleSubmit(onSubmit)}>
+                <label className="form-label" htmlFor="email">EMAIL</label>
+                <input className="input" id="email" type="email"
+                    {...register("email", {
+                        required: true,
+                        pattern: {
+                            value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i,
+                            message: "Not a valid e-mail"
+                        }
+                    })}
+                />
+                {errors.email && <p className="error-p">{errors.email.message}</p>}
 
-            <label className="form-label" htmlFor="password">PASSWORD</label>
-            <input className="input" id="password" type="text"
+                <label className="form-label" htmlFor="password">PASSWORD</label>
+                <input className="input" id="password" type="text"
 
-                {...register("password", {
-                    required: true,
-                    pattern: {
-                        value: /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/i,
-                        message: "The password must have between 8 and 16 characters, at least one digit, one lowercase, one uppercase and at least one non-alphanumeric character."
-                    },
+                    {...register("password", {
+                        required: true,
+                        pattern: {
+                            value: /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/i,
+                            message: "The password must have between 8 and 16 characters, at least one digit, one lowercase, one uppercase and at least one non-alphanumeric character."
+                        },
 
-                })}
-            />
-            {errors.password && <p className="error-p">{errors.password.message}</p>}
-            {loginState !== "" && <p>{loginState}</p>}
+                    })}
+                />
+                {errors.password && <p className="error-p">{errors.password.message}</p>}
+                {loginState !== "" && <p>{loginState}</p>}
 
-            <button className="submit" type="submit">LOG IN</button>
-        </form>
+                <button className="submit" type="submit">LOG IN</button>
+            </form>
+        </>
     )
 }
